@@ -51,4 +51,16 @@ a {
 }
 //bootstrap forms
 /* Start writing sass here */
+.row-flex {
+  @include display(flex);
+}
+.col-flex {
+  @include flex(1);
+}
+
+// header
+  nav {
+    background: url('../img/header-bg.png') no-repeat;
+  }
+// header end
 @import "fancybox-override";

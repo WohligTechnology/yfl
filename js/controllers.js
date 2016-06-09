@@ -8,11 +8,85 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $scope.mySlides = [
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+  $scope.yoga = [
+    {
+      name: "yogo",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "yogo",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "yogo",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    }
+  ];
+  $scope.food = [
+    {
+      name: "food",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "food",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "food",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    }
+  ];
+  $scope.love = [
+    {
+      name: "love",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "love",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    },
+    {
+      name: "love",
+      descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
+    }
+  ];
+
+  $scope.yogaclasses = [
+    {
+      head: "yoga classes",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "yoga classes",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "yoga classes",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "yoga classes",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    }
+  ];
+
+  $scope.foodSection = [
+    {
+      head: "Food",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "Food",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "Food",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    },
+    {
+      head: "Food",
+      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+    }
   ];
 })
 

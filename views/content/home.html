@@ -1,8 +1,8 @@
 <div class="home-slider">
   <div class="row-flex">
     <div class="col-flex">
-      <div class="yoga">
-        <flex-slider flex-slider="slide in yoga">
+      <div class="yoga text-center">
+        <flex-slider class="carousel" flex-slide="slide in yoga track by $index" animation="slide" animation-loop="true" direction-nav="false">
           <li>
             <div class="yoga-detail">
               <h2 class="name">{{slide.name}}</h2>
@@ -13,24 +13,24 @@
       </div>
     </div>
     <div class="col-flex">
-      <div class="food">
-        <flex-slider flex-slider="slide in food">
+      <div class="food text-center">
+        <flex-slider flex-slide="slides in food track by $index" direction-nav="false">
           <li>
             <div class="food-detail">
-              <h2 class="name">{{slide.name}}</h2>
-              <p class="descp">{{slide.descp}}</p>
+              <h2 class="name">{{slides.name}}</h2>
+              <p class="descp">{{slides.descp}}</p>
             </div>
           </li>
         </flex-slider>
       </div>
     </div>
     <div class="col-flex">
-      <div class="love">
-        <flex-slider flex-slider="slide in love">
+      <div class="love text-center">
+        <flex-slider flex-slide="slidess in love track by $index" direction-nav="false">
           <li>
             <div class="love-detail">
-              <h2 class="name">{{slide.name}}</h2>
-              <p class="descp">{{slide.descp}}</p>
+              <h2 class="name">{{slidess.name}}</h2>
+              <p class="descp">{{slidess.descp}}</p>
             </div>
           </li>
         </flex-slider>
@@ -39,10 +39,10 @@
   </div>
 </div>
 <section class="yoga-section">
-  <div class="row">
+  <div class="row-flex">
     <div class="col-flex">
-      <div class="yoga-classes-slider">
-        <flex-slider flex-slide="class in yogaclasses">
+      <div class="yoga-classes-slider text-center">
+        <flex-slider flex-slide="class in yogaclasses track by $index" direction-nav="false">
           <li>
             <div class="yogaclass-inside">
               <h2 class="heading">{{class.head}}</h2>
@@ -54,12 +54,12 @@
       </div>
     </div>
     <div class="col-flex">
-      <div class="yoga-style">
+      <div class="yoga-style text-center">
         <h2>AVAILABLE YOGA STYLES</h2>
         <p>Sed ut perspiciatis unde omnis</p>
         <button class="btn btn-dark">YOGA STUDIOS</button>
       </div>
-      <div class="yoga-teachers">
+      <div class="yoga-teachers text-center">
         <h2 class="text-uppercase">AVAILABLE YOGA teachers</h2>
         <p>Sed ut perspiciatis unde omnis</p>
         <button class="btn btn-dark">YOGA STUDIOS</button>
@@ -67,14 +67,14 @@
     </div>
   </div>
 </section>
-<section class="yoga-info">
+<section class="yoga-info text-center">
   <p>Sed ut perspiciatis unde omnis iste natexplicab.</p>
 </section>
-<section class="food-section">
-  <flex-slider flex-slide="food in foodSection">
+<section class="food-section text-center">
+  <flex-slider flex-slide="food in foodSection track by $index" direction-nav="false">
     <li>
       <div class="food-detail">
-        <h2 class="head">{{food.heading}}</h2>
+        <h2 class="head">{{food.head}}</h2>
         <p class="descp">{{food.descp}}</p>
         <div class="button-more">
           <button class="btn btn-dark text-uppercase">know more</button>
@@ -84,12 +84,12 @@
     </li>
   </flex-slider>
 </section>
-<section class="love-section">
+<section class="love-section text-center">
   <div class="container">
-    <h2 class="heading">LOVE</h2>
+    <h2 class="heading ">LOVE</h2>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
     <div class="love-slider">
-      <flex-slider flex-slide="love in loveSlider">
+      <flex-slider flex-slide="love in loveSlider track by $index" direction-nav="false">
         <li></li>
       </flex-slider>
     </div>
