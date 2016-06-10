@@ -58,9 +58,34 @@ a {
   @include flex(1);
 }
 
+// wire frame css
 // header
   nav {
     background: url('../img/header-bg.png') no-repeat;
   }
 // header end
+// home
+.flexslider {
+  border: none;
+  margin: 0;
+  background-color: transparent;
+}
+.yoga, .love {
+  background-color: #f0f0f0;
+}
+.food { background-color: #fafafa; }
+.yoga-classes-slider { background-color: #fdfdfd; }
+.yoga-style { background-color: #f9f9f9; }
+.yoga-teachers { background-color: #f5f5f5; }
+.food-section { background-color: #f6f6f6; }
+.location { background-color: #f6f6f6; }
+.footer-menu { background-color: #808285; }
+.connect-with-us { background-color: #737373; }\
+.footer-main {
+  background-color: #51b1ac;
+  color: #fff;
+}
+// home end
+// wire frame css end
+
 @import "fancybox-override";
