@@ -11,9 +11,25 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", Arial, sans-serif !default;
+$font-family-serif: "Otama-ep", "Roboto", "PlayfairDisplay", Times, serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@font-face {
+  font-family: "Otamaep";
+  src: url(../fonts/Otama-ep.otf);
+  src: url(../fonts/Otama-ep.eot#iefix) format("embedded-opentype"), url(../fonts/Otama-ep.otf) format("opentype"), url(../fonts/Otama-ep.svg) format("svg");
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../fonts/PlayfairDisplay-Black.otf);
+  src: url(../fonts/PlayfairDisplay-Black.eot#iefix) format("embedded-opentype"), url(../fonts/PlayfairDisplay-Black.otf) format("opentype"), url(../fonts/PlayfairDisplay-Black.svg) format("svg");
+}
+
+
 body {
   padding-top: 70px;
+  font-family: $font-family-sans-serif;
 }
 img.loading {
   text-align: center;
@@ -73,8 +89,20 @@ a {
 }
 .yoga, .love {
   background-color: #f0f0f0;
+
 }
-.food { background-color: #fafafa; }
+.com{
+.carousel{
+    .flexslider{
+      .flex-control-nav{
+        top:60% !important;
+      }
+    }
+  }
+}
+.food { background-color: #fafafa;
+
+}
 .yoga-classes-slider { background-color: #fdfdfd; }
 .yoga-style { background-color: #f9f9f9; }
 .yoga-teachers { background-color: #f5f5f5; }
@@ -88,5 +116,68 @@ a {
 }
 // home end
 // wire frame css end
+.bg-slider{
+  position: relative;
+  img{
+    position: relative;
+  }
+}
+.yoga-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-up{
+  text-transform: uppercase;
+}
+.text-caps{
+  text-transform: capitalize;
+}
+.font-roboto{
+  font-family: "roboto";
+  font-weight:300;
+}
+.font-otamaep{
+  font-family: "otamaep";
+
+}
+.font-big{
+  font-size: 62px;
+
+}
+.font-small{
+  font-size: 20px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.f65{
+  font-size: 65px;
+
+}
+.f30{
+  font-size: 30px;
+}
+.f34{
+  font-size: 34px;
+}
+.f55{
+  font-size: 55px;
+}
+.line-130{
+  line-height: 130%;
+}
+.btn-black{
+  background: black;
+color: #fff;
+font-size: 18px;
+&:hover{
+  color: #fff;
+}
+}
 
 @import "fancybox-override";

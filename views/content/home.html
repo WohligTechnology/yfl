@@ -1,37 +1,48 @@
 <div class="home-slider">
   <div class="row-flex">
     <div class="col-flex">
-      <div class="yoga text-center">
+      <div class="yoga text-center com">
         <flex-slider class="carousel" flex-slide="slide in yoga track by $index" animation="slide" animation-loop="true" direction-nav="false">
           <li>
-            <div class="yoga-detail">
-              <h2 class="name">{{slide.name}}</h2>
-              <p class="descp">{{slide.descp}}</p>
+            <div class="bg-slider">
+              <img ng-src="{{slide.img}}" alt="" class="img-responsive">
+               <div class="yoga-detail">
+                <h2 class="name text-up font-big">{{slide.name}}</h2>
+                <p class="descp font-small font-roboto">{{slide.descp}}</p>
+              </div>
+            </div>
+
+          </li>
+        </flex-slider>
+      </div>
+    </div>
+    <div class="col-flex">
+      <div class="food text-center com">
+        <flex-slider class="carousel" flex-slide="slides in food track by $index" direction-nav="false" animation="slide" animation-loop="true">
+          <li>
+            <div class="bg-slider">
+              <img ng-src="{{slides.img}}" alt="" class="img-responsive">
+               <div class="yoga-detail">
+                <h2 class="name text-up font-big">{{slides.name}}</h2>
+                <p class="descp font-small font-roboto">{{slides.descp}}</p>
+              </div>
             </div>
           </li>
         </flex-slider>
       </div>
     </div>
     <div class="col-flex">
-      <div class="food text-center">
-        <flex-slider flex-slide="slides in food track by $index" direction-nav="false">
+      <div class="love text-center com">
+        <flex-slider class="carousel" flex-slide="slidess in love track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
-            <div class="food-detail">
-              <h2 class="name">{{slides.name}}</h2>
-              <p class="descp">{{slides.descp}}</p>
+            <div class="bg-slider">
+              <img ng-src="{{slidess.img}}" alt="" class="img-responsive">
+               <div class="yoga-detail">
+                <h2 class="name text-up font-big">{{slidess.name}}</h2>
+                <p class="descp font-small font-roboto">{{slidess.descp}}</p>
+              </div>
             </div>
-          </li>
-        </flex-slider>
-      </div>
-    </div>
-    <div class="col-flex">
-      <div class="love text-center">
-        <flex-slider flex-slide="slidess in love track by $index" direction-nav="false">
-          <li>
-            <div class="love-detail">
-              <h2 class="name">{{slidess.name}}</h2>
-              <p class="descp">{{slidess.descp}}</p>
-            </div>
+
           </li>
         </flex-slider>
       </div>
@@ -41,28 +52,43 @@
 <section class="yoga-section">
   <div class="row-flex">
     <div class="col-flex">
-      <div class="yoga-classes-slider text-center">
-        <flex-slider flex-slide="class in yogaclasses track by $index" direction-nav="false">
+      <div class="yoga-classes-slider text-center ">
+        <flex-slider flex-slide="class in yogaclasses track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
-            <div class="yogaclass-inside">
-              <h2 class="heading">{{class.head}}</h2>
-              <p class="descp">{{class.descp}}</p>
-              <button class="btn btn-dark">YOGA STUDIOS</button>
+            <div class="yogaclass-inside bg-slider">
+              <img ng-src="{{class.img}}" alt="" class="img-responsive">
+              <div class="yoga-detail">
+              <h2 class="heading text-up f65">{{class.head}}</h2>
+              <p class="descp font-roboto f30 line-130">{{class.descp}}</p>
+            <div class="mt30">
+                <button class="btn btn-dark btn-black font-otamaep">YOGA STUDIOS</button>
+            </div>
+              </div>
             </div>
           </li>
         </flex-slider>
       </div>
     </div>
     <div class="col-flex">
-      <div class="yoga-style text-center">
-        <h2>AVAILABLE YOGA STYLES</h2>
-        <p>Sed ut perspiciatis unde omnis</p>
-        <button class="btn btn-dark">YOGA STUDIOS</button>
+      <div class="yoga-style text-center bg-slider">
+        <img src="img/bg1.png" alt="" class="img-responsive">
+      <div class="yoga-detail">
+        <h2 class="f55 text-up">AVAILABLE YOGA STYLES</h2>
+        <p class="font-roboto f34">Sed ut perspiciatis unde omnis</p>
+        <div class="mt30">
+          <button class="btn btn-dark btn-black font-otamaep">YOGA STUDIOS</button>
+        </div>
       </div>
-      <div class="yoga-teachers text-center">
-        <h2 class="text-uppercase">AVAILABLE YOGA teachers</h2>
-        <p>Sed ut perspiciatis unde omnis</p>
-        <button class="btn btn-dark">YOGA STUDIOS</button>
+      </div>
+      <div class="yoga-teachers text-center  bg-slider">
+          <img src="img/bg2.png" alt="" class="img-responsive">
+          <div class="yoga-detail">
+        <h2 class="text-up f55">AVAILABLE YOGA teachers</h2>
+        <p class="font-roboto f34">Sed ut perspiciatis unde omnis iste natus error.</p>
+      <div class="mt30">
+          <button class="btn btn-dark btn-black font-otamaep">YOGA STUDIOS</button>
+      </div>
+      </div>
       </div>
     </div>
   </div>

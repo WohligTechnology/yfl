@@ -10,42 +10,51 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.yoga = [
     {
+      img:"../img/s1.png",
       name: "yogo",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+        img:"../img/s1.png",
       name: "yogo",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+        img:"../img/s1.png",
       name: "yogo",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
   ];
   $scope.food = [
     {
+      img:"../img/s2.png",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+      img:"../img/s2.png",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+      img:"../img/s2.png",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
   ];
   $scope.love = [
     {
+      img:"../img/s1.png",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+      img:"../img/s1.png",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
+      img:"../img/s1.png",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
@@ -53,18 +62,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.yogaclasses = [
     {
+      img:"../img/s3.png",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnisiste natus error sit."
     },
     {
+        img:"../img/s3.png",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnisiste natus error sit."
     },
     {
-      head: "yoga classes",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
-    },
-    {
+        img:"../img/s3.png",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnisiste natus error sit."
     }
