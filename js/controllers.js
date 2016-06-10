@@ -59,6 +59,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
   ];
+  $scope.loveSlider = [
+    {
+      img:"../img/bg3.png"
+
+    },
+    {
+      img:"../img/bg3.png"
+
+    },
+    {
+      img:"../img/bg3.png"
+
+    }
+  ];
 
   $scope.yogaclasses = [
     {
@@ -80,20 +94,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.foodSection = [
     {
+      img:"../img/s4.png",
       head: "Food",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
+      img:"../img/s4.png",
       head: "Food",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
+      img:"../img/s4.png",
       head: "Food",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
-    },
-    {
-      head: "Food",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     }
   ];
 })
