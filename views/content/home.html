@@ -53,7 +53,7 @@
   <div class="row-flex">
     <div class="col-flex">
       <div class="yoga-classes-slider text-center ">
-        <flex-slider flex-slide="class in yogaclasses track by $index" direction-nav="false" animation="slide" animation-loop="true">
+        <flex-slider class="carousel" flex-slide="class in yogaclasses track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
             <div class="yogaclass-inside bg-slider">
               <img ng-src="{{class.img}}" alt="" class="img-responsive">
@@ -74,7 +74,7 @@
         <img src="img/bg1.png" alt="" class="img-responsive">
       <div class="yoga-detail">
         <h2 class="f55 text-up">AVAILABLE YOGA STYLES</h2>
-        <p class="font-roboto f34">Sed ut perspiciatis unde omnis</p>
+        <p class="font-roboto f34 line-130">Sed ut perspiciatis unde omnis</p>
         <div class="mt30">
           <button class="btn btn-dark btn-black font-otamaep">YOGA STUDIOS</button>
         </div>
@@ -84,7 +84,7 @@
           <img src="img/bg2.png" alt="" class="img-responsive">
           <div class="yoga-detail">
         <h2 class="text-up f55">AVAILABLE YOGA teachers</h2>
-        <p class="font-roboto f34">Sed ut perspiciatis unde omnis iste natus error.</p>
+        <p class="font-roboto f34 line-130">Sed ut perspiciatis unde omnis iste natus error.</p>
       <div class="mt30">
           <button class="btn btn-dark btn-black font-otamaep">YOGA STUDIOS</button>
       </div>
@@ -94,7 +94,15 @@
   </div>
 </section>
 <section class="yoga-info text-center">
-  <p>Sed ut perspiciatis unde omnis iste natexplicab.</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="">
+      <div class="position-relative">
+          <p>Sed ut perspiciatis unde omnis iste natexplicab.</p>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 <section class="food-section text-center">
   <flex-slider flex-slide="food in foodSection track by $index" direction-nav="false">
@@ -113,7 +121,7 @@
 <section class="love-section text-center">
   <div class="container">
     <h2 class="heading ">LOVE</h2>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
     <div class="love-slider">
       <flex-slider flex-slide="love in loveSlider track by $index" direction-nav="false">
         <li></li>

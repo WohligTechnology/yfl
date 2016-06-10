@@ -100,10 +100,19 @@ a {
     }
   }
 }
+
 .food { background-color: #fafafa;
 
 }
-.yoga-classes-slider { background-color: #fdfdfd; }
+.yoga-classes-slider { background-color: #fdfdfd;
+  .carousel{
+      .flexslider{
+        .flex-control-nav{
+          bottom:90px !important;
+        }
+      }
+    }
+ }
 .yoga-style { background-color: #f9f9f9; }
 .yoga-teachers { background-color: #f5f5f5; }
 .food-section { background-color: #f6f6f6; }
@@ -179,5 +188,41 @@ font-size: 18px;
   color: #fff;
 }
 }
-
+.yoga-info{
+  padding: 100px 0px;
+  p{
+    font-size: 52px;
+    &:after{
+      background: url(../img/2.png)no-repeat;
+      content: "";
+      height: 106px;
+          width: 154px;
+          color: black;
+          font-size: 87px;
+          z-index: 99;
+          display: inline-block;
+          position: absolute;
+          top: 60px;
+          bottom: 0px;
+          right: 183px;
+    }
+    &:before{
+      background: url(../img/1.png)no-repeat;
+      content: "";
+      height: 106px;
+          width: 154px;
+          color: black;
+          font-size: 87px;
+          z-index: 99;
+          display: inline-block;
+          position: absolute;
+          top: -40px;
+          bottom: 0px;
+          left: 220px;
+    }
+  }
+}
+.position-relative{
+  position: relative;
+}
 @import "fancybox-override";
