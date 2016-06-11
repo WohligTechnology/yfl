@@ -11,8 +11,8 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "Rubik-Regular", sans-serif !default;
-$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "Rubik-Regular", serif !default;
+$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular", sans-serif !default;
+$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular", serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @font-face {
@@ -26,12 +26,25 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "Rubik-Regular", ser
   src: url(../fonts/PlayfairDisplay-Black.eot#iefix) format("embedded-opentype"), url(../fonts/PlayfairDisplay-Black.otf) format("opentype"), url(../fonts/PlayfairDisplay-Black.svg) format("svg");
 }
 @font-face {
-  font-family: "Rubik-Regular";
+  font-family: "RubikRegular";
   src: url(../fonts/Rubik-Regular.ttf);
   src: url(../fonts/Rubik-Regular.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Regular.ttf) format("truetypefont"), url(../fonts/Rubik-Regular.svg) format("svg");
 }
 
-
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
 body {
   padding-top: 70px;
   font-family: $font-family-sans-serif;
@@ -143,7 +156,7 @@ padding: 0px 0px 40px 0px;
 font-family: "rubik";
 }
 .connect-with-us { background-color: #737373;
-    padding: 30px 30px 50px 30px;
+    padding: 30px 50px 80px 30px;
 }
 .footer-main {
   background-color: #51b1ac;
@@ -196,6 +209,9 @@ font-family: "rubik";
 .mt15{
   margin-top: 15px;
 }
+.mt45{
+  margin-top: 45px;
+}
 .f65{
   font-size: 65px;
 
@@ -207,11 +223,11 @@ font-family: "rubik";
   font-size: 34px;
 }
 .connected{
-  padding-top: 15px;
+  padding-top: 30px;
 }
 .border-white{
   border-top: 1px solid #fff;
-  padding-top: 30px;
+  padding-top:50px;
 }
 .f45{
   font-size: 45px;
@@ -288,9 +304,11 @@ font-size: 18px;
 .list-style{
   li{
     list-style: none;
-    padding: 8px 0px;
+    padding: 10px 0px;
     a{
-      font-family: "Rubik-Regular";
+      font-family: "Rubik";
+      font-weight: 100;
+      letter-spacing: 1px;
       color:#fff;
       &:hover{
         color: #fff;
@@ -305,8 +323,14 @@ font-size: 18px;
     }
   }
 }
+.f16{
+  font-size: 16px;
+}
+
 .font-rubik{
-  font-family: "Rubik-Regular";
+  font-family: "Rubik";
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .color-white{
   color:#fff;
@@ -327,6 +351,28 @@ font-size: 18px;
    }
  }
   }
+}
+.place{
+  input {
+height: 60px;
+font-size: 16px;
+    @include placeholder{
+      color: #575757;
+      font-size: 16px;
+    }
+  }
+}
+.height60{
+  height: 60px;
+}
+.btn-join{
+
+   background: #51b1ac;
+   color: #fff;
+   padding: 10px 20px 10px 20px;
+   font-size: 18px;
+   font-family: "rubik";
+
 }
 .padd30 {padding: 30px 30px 50px 30px;}
 @import "fancybox-override";
