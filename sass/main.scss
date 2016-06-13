@@ -46,7 +46,7 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular", seri
   transition: $transition;
 }
 body {
-  padding-top: 70px;
+  padding-top: 98px;
   font-family: $font-family-sans-serif;
 }
 img.loading {
@@ -118,7 +118,25 @@ a {
     }
   }
 }
-
+.sign{
+  a{
+    &:hover{
+      color:#2e2e2e;
+    }
+  }
+}
+.logo{
+  padding: 15px 0px;
+}
+.mt35{
+  margin-top: 35px;
+}
+.f18{
+  font-size: 18px;
+}
+.mt38{
+  margin-top: 38px;
+}
 .food { background-color: #fafafa;
 
 }
