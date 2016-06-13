@@ -6,13 +6,15 @@
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 /* Bootstrap Variables Goes Here */
-$brand-primary: #f7ca3d !default;
+$brand-primary: #f6c83b !default;
 $brand-success: #80888a !default;
 $brand-warning: #ef435d !default;
 $brand-danger: #8ad2cf!default;
 $brand-info: #ce94a0 !default;
 $black-bg: #2e2e2e !default;
 $green: #51b1ac !default;
+$second: #4e4f51 !default;
+$second: #4e4f51 !default;
 $font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", sans-serif !default;
 $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -374,7 +376,7 @@ font-size: 18px;
   // letter-spacing: 1px;
 }
 .color-white{
-  color:#fff;
+  color:#fff ;
 }
 .list-inline{
   li{
@@ -541,6 +543,12 @@ opacity: 1;
       @include button-variant(white, $green, $green);
     }
 }
+.btn-yellow {
+    @include button-variant($second, $brand-primary, $brand-primary);
+    &:hover{
+      @include button-variant($second, $brand-primary, $brand-primary);
+    }
+}
 .btn{
   font-size: 24px;
   padding: 8px 25px;
@@ -605,6 +613,22 @@ cursor: pointer;
 box-shadow: 2px 0px 8px 0px #ececec;
     padding: 8px 8px 10px 8px;
     background-color: #fff;
+    cursor: pointer;
+      @include transition(all 300ms ease);
+    .second-layer {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        /* width: 100%; */
+        background: rgb(224, 241, 240);
+        margin-left: -8px;
+        padding: 12px 20px 10px 20px;
+        display: none;
+          @include transition(all 300ms ease);
+    }
+    &:hover .second-layer{
+      display: block;
+    }
 }
 .sponser {
     position: absolute;
@@ -660,5 +684,21 @@ bottom: 10px;
 }
 .mr10{
       margin-right: 10px;
+}
+
+.color-second{
+  color:$second;
+}
+.up-title{
+h4{
+  font-size: 24px;
+  color:$black-bg;
+}
+}
+.btn-down{
+  position: absolute;
+width: 100%;
+top: 43%;
+transform: translateY(-50%);
 }
 @import "fancybox-override";
