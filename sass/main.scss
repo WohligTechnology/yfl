@@ -15,8 +15,8 @@ $black-bg: #2e2e2e !default;
 $green: #51b1ac !default;
 $second: #4e4f51 !default;
 $second: #4e4f51 !default;
-$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", sans-serif !default;
-$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", serif !default;
+$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", "neutra", sans-serif !default;
+$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", "neutra",serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @font-face {
@@ -28,6 +28,11 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubi
   font-family: "PlayfairDisplay";
   src: url(../fonts/PlayfairDisplay-Black.otf);
   src: url(../fonts/PlayfairDisplay-Black.eot#iefix) format("embedded-opentype"), url(../fonts/PlayfairDisplay-Black.otf) format("opentype"), url(../fonts/PlayfairDisplay-Black.svg) format("svg");
+}
+@font-face {
+  font-family: "neutra";
+  src: url(../fonts/neutra.otf);
+  src: url(../fonts/neutra.eot#iefix) format("embedded-opentype"), url(../fonts/neutra.otf) format("opentype"), url(../fonts/neutra.svg) format("svg");
 }
 @font-face {
   font-family: "RubikRegular";
@@ -709,5 +714,10 @@ padding: 0px 10px;
     padding: 0px 20px;
 }
 
-
+.neu {
+      padding: 30px 10px 40px 10px;
+    p{
+    font-family: "neutra";margin: 0px;
+    }
+}
 @import "fancybox-override";
