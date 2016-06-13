@@ -11,8 +11,10 @@ $brand-success: #80888a !default;
 $brand-warning: #ef435d !default;
 $brand-danger: #8ad2cf!default;
 $brand-info: #ce94a0 !default;
-$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular", sans-serif !default;
-$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular", serif !default;
+$black-bg: #2e2e2e !default;
+$green: #51b1ac !default;
+$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", sans-serif !default;
+$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @font-face {
@@ -29,6 +31,13 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular", seri
   font-family: "RubikRegular";
   src: url(../fonts/Rubik-Regular.ttf);
   src: url(../fonts/Rubik-Regular.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Regular.ttf) format("truetypefont"), url(../fonts/Rubik-Regular.svg) format("svg");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "RubikMedium";
+  src: url(../fonts/Rubik-Medium.ttf);
+  src: url(../fonts/Rubik-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Medium.ttf) format("truetypefont"), url(../fonts/Rubik-Medium.svg) format("svg");
+  font-weight: 400;
 }
 
 @mixin placeholder {
@@ -108,6 +117,9 @@ a {
 .yoga, .love {
   background-color: #f0f0f0;
 
+}
+.color-bl{
+  color:$black-bg;
 }
 .com{
 .carousel{
@@ -233,6 +245,9 @@ font-family: "rubik";
 .mt45{
   margin-top: 45px;
 }
+.mt40{
+  margin-top: 40px;
+}
 .f65{
   font-size: 65px;
 
@@ -352,6 +367,11 @@ font-size: 18px;
   font-family: "Rubik";
   font-weight: 100;
   letter-spacing: 1px;
+}
+.font-rubikm{
+  font-family: "Rubik";
+  font-weight: 400;
+  // letter-spacing: 1px;
 }
 .color-white{
   color:#fff;
@@ -489,6 +509,10 @@ opacity: 1;
     right: 80px;
     outline: 0;
   }
+  .flex-control-nav {
+
+    display: none;
+}
 }
 .f40{
   font-size: 40px;
@@ -506,14 +530,105 @@ opacity: 1;
   display: inline-block;
 }
 .btn-white {
-    @include button-variant($brand-danger, white, white);
+    @include button-variant($green, white, white);
     &:hover{
-        @include button-variant($brand-danger, white, white) ;
+        @include button-variant($green, white, white) ;
+    }
+}
+.btn-green {
+    @include button-variant(white, $green, $green);
+    &:hover{
+      @include button-variant(white, $green, $green);
     }
 }
 .btn{
   font-size: 24px;
   padding: 8px 25px;
   font-weight: 400;
+}
+.bg-black{
+  background-color: $black-bg;
+}
+.bg-color{
+  background: url(../img/bg-color.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.select-cl{
+  border-color: #464646;
+height: 50px;
+padding: 0px 50px 0px 15px;
+margin-left: 10px;
+cursor: pointer;
+}
+.onoffswitch {
+    position: relative; width: 55px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 20px; padding: 0; line-height: 20px;
+    border: 0px solid #FFFFFF; border-radius: 30px;
+    background-color: #888888;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: -5px;
+    background: #464646;
+    position: absolute; top: 0; bottom: 0;
+    right: 31px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    // background-color: ;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  //  border-color: ;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px;
+    background-color: #464646;
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+.body-img{
+  font-family: "rubik";
+  border: 1px solid #ececec;
+/* box-shadow: 0px 0px 0px 0px; */
+box-shadow: 2px 0px 8px 0px #ececec;
+    padding: 8px 8px 10px 8px;
+    background-color: #fff;
+}
+.sponser {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.font-light{
+  font-weight: 400;
+}
+.top-left {
+    background: #f4be33;
+    display: inline-block;
+    padding: 5px;
+    font-family: "rubik";
+}
+.top-right {
+    padding: 10px 10px;
+}
+.p40{
+      padding: 40px 0px;
+}
+.know-m{
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
 }
 @import "fancybox-override";

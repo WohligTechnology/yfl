@@ -138,5 +138,52 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     }
   ];
+  $scope.rowdata = [
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
 
+    },
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+    },
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"../img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+    }
+  ];
+  $scope.rate = 7;
+   $scope.max = 10;
+   $scope.isReadonly = false;
+
+   $scope.hoveringOver = function(value) {
+     $scope.overStar = value;
+     $scope.percent = 100 * (value / $scope.max);
+   };
 });

@@ -24,8 +24,9 @@
     <div class="row">
       <div class="col-md-12">
 <div class="text-center">
-  <h4>I am  looking  to  journey to <span><input type="text" placeholder="City"></span>& Find a place that serves<span><input type="text" placeholder="City"></span> </h4>
-  <h4>Cuisine  in the <span><input type="text"></span>the cost for 2 being between <span><input type="number"></span></h4>
+  <span class="font-rubikm color-white text-up">I am  looking  to  journey to <div class="display-inline"><input type="text" placeholder="City"></div>& Find a place that serves <div class="display-inline"><input type="text" placeholder="City"</div></span>
+  <!-- <h4 ><span></span><span>y"></span> </h4>
+  <h4 class="font-rubik color-white text-up">Cuisine  in the <span><input type="text"></span>the cost for 2 being between <span><input type="number"></span></h4> -->
   <div class="btn-apply">
     <button type="button">Apply</button>
   </div>
@@ -39,37 +40,71 @@
     <div class="container">
 <div class="row">
   <div class="col-md-5">
-    <span>Sort BY: </span>
-    <div class="display-inline">
-      <select class="form-control">
-    <option>POPULaRiTY</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-  </select>
+    <div class="mt35">
+      <span class="font-rubik text-up f18 color-bl">Sort BY: </span>
+      <div class="display-inline">
+        <select class="form-control font-rubik text-up f18 select-cl color-bl">
+      <option>POPULaRiTY</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+      </div>
     </div>
+
   </div>
   <div class="col-md-7">
-    <div class="toggle-btn pull-right">
-      <span>Map Viwe: </span>
-      <div class="display-inline">
-        <div class="onoffswitch">
-      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-      <label class="onoffswitch-label" for="myonoffswitch">
-          <span class="onoffswitch-inner"></span>
-          <span class="onoffswitch-switch"></span>
-      </label>
-  </div>
-      </div>
-
+<div class="mt40">
+  <div class="toggle-btn pull-right">
+    <span class="font-rubik f18 text-up color-bl" style="vertical-align: top;">Map View </span>
+    <div class="display-inline">
+      <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
     </div>
+
   </div>
 </div>
+  </div>
+</div>
+<div class="row ">
+  <div class="col-md-4 mt35"  ng-repeat="item in rowdata track by $index">
+    <div class="body-img">
+      <div class="img-main position-relative">
+        <img ng-src="{{item.img}}" alt="" class="img-responsive">
+        <div class="sponser">
+        <div class="top-left">
+            <span>Sponsored</span>
+        </div>
+        <div class="top-right pull-right">
+          <img src="img/like.png" alt="" class="img-responsive">
+        </div>
+        <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="title text-center">
+        <h5 class="text-up color-bl f18 font-light">{{item.title}}</h5>
+        <span>{{item.data}}</span>
+      </div>
+      <div class="rating text-center mt25">
+      <img src="img/star.png" alt="">
+      </div>
+      <div class="text-center mt10">
+        <button class="know-m text-up btn-green font-light f18">know more</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 <div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4"></div>
+  <div class="text-center p40">
+    <h4 class="font-rubik font-light" style="color:#a7a9ac;">Loading..</h4>
+  </div>
 </div>
     </div>
   </div>
