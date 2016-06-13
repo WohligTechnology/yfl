@@ -116,32 +116,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
   });
-});
+})
 
-// .controller('languageCtrl', function($scope, TemplateService,$translate,$rootScope) {
-//
-//     $scope.changeLanguage = function() {
-//       console.log("Language CLicked");
-//
-//       if(!$.jStorage.get("language")){
-//         $translate.use("hi");
-//         $.jStorage.set("language","hi");
-//       }
-//       else {
-//         if($.jStorage.get("language") == "en")
-//         {
-//           $translate.use("hi");
-//           $.jStorage.set("language","hi");
-//         }
-//         else {
-//           $translate.use("en");
-//           $.jStorage.set("language","en");
-//         }
-//       }
-//     //  $rootScope.$apply();
-//     };
-//
-//
-// })
-//
-// ;
+.controller('RestaurantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("restaurant");
+  $scope.menutitle = NavigationService.makeactive("Restaurant");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+  $scope.loveSlider = [
+    {
+      img:"../img/b1.jpg"
+
+    },
+    {
+      img:"../img/b1.jpg"
+
+    },
+    {
+      img:"../img/b1.jpg"
+
+    }
+  ];
+
+});

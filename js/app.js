@@ -14,6 +14,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     url: "/home",
     templateUrl: "views/template.html",
     controller: 'HomeCtrl'
+  })
+    .state('restaurant', {
+    url: "/restaurant",
+    templateUrl: "views/template.html",
+    controller: 'RestaurantCtrl'
   });
   $urlRouterProvider.otherwise("/home");
   $locationProvider.html5Mode(isproduction);
@@ -65,7 +70,7 @@ firstapp.directive('fancyboxBox', function($document) {
     };
 });
 
-// 
+//
 // firstapp.config(function ($translateProvider) {
 //   $translateProvider.translations('en', LanguageEnglish);
 //   $translateProvider.translations('hi', LanguageHindi);

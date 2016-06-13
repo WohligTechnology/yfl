@@ -6,11 +6,11 @@
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 /* Bootstrap Variables Goes Here */
-$brand-primary: #0d9dff !default;
-$brand-success: #84ce3c !default;
-$brand-warning: #ffec39 !default;
-$brand-danger: #fc483f !default;
-$brand-info: #000072 !default;
+$brand-primary: #f7ca3d !default;
+$brand-success: #80888a !default;
+$brand-warning: #ef435d !default;
+$brand-danger: #8ad2cf!default;
+$brand-info: #ce94a0 !default;
 $font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular", sans-serif !default;
 $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular", serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -442,5 +442,78 @@ opacity: 1;
     right: -67px;
     outline: 0;
   }
+}
+.home-slider{
+  // .carousel li {
+  //   margin-right: 0 !important;
+  // }
+  .flex-direction-nav a.flex-next:before {
+    content: '';
+    background: url(../img/right1.png) no-repeat center;
+    width:64px;
+    height: 62px;
+  }
+  .flex-direction-nav a.flex-prev:before {
+    content: '';
+    background: url(../img/left1.png) no-repeat center;
+    width: 64px;
+    height: 62px;
+  }
+  .flex-direction-nav a {
+    width: 64px;
+    height: 66px;
+  opacity: 1;
+  }
+  .flex-direction-nav .flex-prev {
+    left: 80px;
+  }
+  .flex-direction-nav .flex-next {
+    right: 80px;
+    text-align: right;
+  }
+  .flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+
+  }
+  .flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+
+  }
+  .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+    left: 80px;
+    outline: 0;
+  }
+  .flexslider:hover .flex-direction-nav .flex-next {
+opacity: 1;
+    right: 80px;
+    outline: 0;
+  }
+}
+.f40{
+  font-size: 40px;
+  font-weight: 500;
+}
+.f28{
+  font-size: 28px;
+}
+.slider-data {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.display-inline{
+  display: inline-block;
+}
+.btn-white {
+    @include button-variant($brand-danger, white, white);
+    &:hover{
+        @include button-variant($brand-danger, white, white) ;
+    }
+}
+.btn{
+  font-size: 24px;
+  padding: 8px 25px;
+  font-weight: 400;
 }
 @import "fancybox-override";
