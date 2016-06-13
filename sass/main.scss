@@ -396,4 +396,51 @@ font-size: 16px;
 
 }
 .padd30 {padding: 30px 30px 50px 30px;}
+.love-slider{
+  // .carousel li {
+  //   margin-right: 0 !important;
+  // }
+  .flex-direction-nav a.flex-next:before {
+    content: '';
+    background: url(../img/right.png) no-repeat center;
+    width:64px;
+    height: 62px;
+  }
+  .flex-direction-nav a.flex-prev:before {
+    content: '';
+    background: url(../img/left.png) no-repeat center;
+    width: 64px;
+    height: 62px;
+  }
+  .flex-direction-nav a {
+    width: 64px;
+    height: 66px;
+  opacity: 1;
+  }
+  .flex-direction-nav .flex-prev {
+    left: -67px;
+  }
+  .flex-direction-nav .flex-next {
+    right: -67px;
+    text-align: right;
+  }
+  .flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+
+  }
+  .flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+
+  }
+  .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+    left: -67px;
+    outline: 0;
+  }
+  .flexslider:hover .flex-direction-nav .flex-next {
+opacity: 1;
+    right: -67px;
+    outline: 0;
+  }
+}
 @import "fancybox-override";
