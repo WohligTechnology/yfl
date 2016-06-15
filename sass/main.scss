@@ -420,6 +420,13 @@ font-size: 16px;
    padding: 10px 20px 10px 20px;
    font-size: 18px;
    font-family: "rubik";
+   &:hover{
+     color:#fff !important;
+     outline: 0;
+   }
+   &:focus{
+     outline: 0;
+   }
 
 }
 .padd30 {padding: 30px 30px 50px 30px;}
