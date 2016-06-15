@@ -471,7 +471,7 @@ font-size: 16px;
   opacity: 1;
     left: -67px;
     outline: 0;
-  }  
+  }
   .flexslider:hover .flex-direction-nav .flex-next {
 opacity: 1;
     right: -67px;
@@ -733,6 +733,12 @@ padding: 0px 10px;
 }
 .font-neutra{
   font-family: "neutra";
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
 }
 @import "fancybox-override";
 @import "mobile";
