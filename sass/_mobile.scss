@@ -64,17 +64,17 @@
     margin-top: 15px;
 }
 .btn {
-    font-size: 16px;
+    font-size: 14px;
 
 }
 .f55 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .f34 {
-    font-size: 16px;
+    font-size: 14px;
 }
 .f45 {
-    font-size: 25px;
+    font-size: 22px;
 }
 .f35 {
     font-size: 18px;
@@ -90,7 +90,7 @@
 }
 .list-inline li {
 
-    margin: 0px 3px;
+    margin: 0px 1px;
 }
 .float-left{
   float: none;
@@ -98,6 +98,37 @@
 .float-right{
   float: none;
 }
+.f-sign{
+  font-size: 15px;
 }
-@media (max-width: $screen-xs-max){}
-@media (max-width:480px) {}
+}
+@media (max-width: $screen-xs-max){
+  .f-sign {
+    font-size: 12px;
+}
+.f65 {
+    font-size: 25px;
+}
+.f30 {
+    font-size: 14px;
+}
+.btn {
+    font-size: 12px;
+    padding: 6px 20px;
+}
+.f55 {
+    font-size: 18px;
+}
+.f34 {
+    font-size: 13px;
+}
+.yoga-info p {
+    font-size: 30px;
+}
+.list-inline li {
+    margin: 3px 1px;
+}
+}
+@media (max-width:480px) {
+
+}
