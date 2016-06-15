@@ -21,8 +21,8 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubi
 
 @font-face {
   font-family: "Otamaep";
-  src: url(../fonts/Otama-ep.otf);
-  src: url(../fonts/Otama-ep.eot#iefix) format("embedded-opentype"), url(../fonts/Otama-ep.otf) format("opentype"), url(../fonts/Otama-ep.svg) format("svg");
+  src: url(../fonts/Otamaep.otf);
+  src: url(../fonts/Otamaep.eot#iefix) format("embedded-opentype"), url(../fonts/Otamaep.otf) format("opentype"), url(../fonts/Otamaep.svg) format("svg");
 }
 @font-face {
   font-family: "PlayfairDisplay";
@@ -112,7 +112,8 @@ a {
 // wire frame css
 // header
   nav {
-    background: url('../img/header-bg.png') no-repeat;
+    background: url('../img/header-bg.png') no-repeat #fff;
+
   }
 // header end
 // home
@@ -470,7 +471,7 @@ font-size: 16px;
   opacity: 1;
     left: -67px;
     outline: 0;
-  }
+  }  
   .flexslider:hover .flex-direction-nav .flex-next {
 opacity: 1;
     right: -67px;
@@ -734,3 +735,4 @@ padding: 0px 10px;
   font-family: "neutra";
 }
 @import "fancybox-override";
+@import "mobile";
