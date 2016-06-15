@@ -574,6 +574,9 @@ height: 50px;
 padding: 0px 50px 0px 15px;
 margin-left: 10px;
 cursor: pointer;
+&:focus{
+    border-color: #464646;
+}
 }
 .onoffswitch {
     position: relative; width: 55px;
@@ -719,5 +722,8 @@ padding: 0px 10px;
     p{
     font-family: "neutra";margin: 0px;
     }
+}
+.font-neutra{
+  font-family: "neutra";
 }
 @import "fancybox-override";
