@@ -1,7 +1,7 @@
 {
-  "name": "Yoga Food Love",
+  "name": "Smaaash",
   "version": "0.0.1",
-  "description": "Yoga Food Love",
+  "description": "AngularFrameworkFrontend",
   "main": "gulpfile.js",
   "dependencies": {
     "crypto-js": "^3.1.6",
