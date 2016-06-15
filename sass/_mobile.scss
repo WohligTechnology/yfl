@@ -90,7 +90,7 @@
 }
 .list-inline li {
 
-    margin: 0px 1px;
+    margin: 3px 3px;
 }
 .float-left{
   float: none;
@@ -101,7 +101,19 @@
 .f-sign{
   font-size: 15px;
 }
-
+.z-img{
+  zoom:0.5;
+}
+.mt35 {
+    margin-top: 24px;
+}
+.mt38 {
+    margin-top: 26px;
+}
+body {
+  padding-top: 65px;
+  font-family: $font-family-sans-serif;
+}
 }
 @media (max-width: $screen-xs-max){
   .f-sign {
@@ -127,9 +139,21 @@
     font-size: 30px;
 }
 .list-inline li {
-    margin: 3px 1px;
+    margin: 3px 3px;
 }
-
+.z-img{
+  zoom:0.6;
+}
+.mt35 {
+    margin-top: 24px;
+}
+.mt38 {
+    margin-top: 26px;
+}
+body {
+  padding-top: 70px;
+  font-family: $font-family-sans-serif;
+}
 }
 @media (max-width:480px) {
 
