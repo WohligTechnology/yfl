@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,300,500,700);
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -15,8 +16,8 @@ $black-bg: #2e2e2e !default;
 $green: #51b1ac !default;
 $second: #4e4f51 !default;
 
-$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", "neutra", sans-serif !default;
-$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubik-Medium", "neutra",serif !default;
+$font-family-sans-serif: "Otamaep",  "Roboto", "PlayfairDisplay", "Rubik", "neutra", sans-serif !default;
+$font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "Rubik" "neutra",serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @font-face {
@@ -34,18 +35,18 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubi
   src: url(../fonts/neutra.otf);
   src: url(../fonts/neutra.eot#iefix) format("embedded-opentype"), url(../fonts/neutra.otf) format("opentype"), url(../fonts/neutra.svg) format("svg");
 }
-@font-face {
-  font-family: "RubikRegular";
-  src: url(../fonts/Rubik-Regular.ttf);
-  src: url(../fonts/Rubik-Regular.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Regular.ttf) format("truetypefont"), url(../fonts/Rubik-Regular.svg) format("svg");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "RubikMedium";
-  src: url(../fonts/Rubik-Medium.ttf);
-  src: url(../fonts/Rubik-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Medium.ttf) format("truetypefont"), url(../fonts/Rubik-Medium.svg) format("svg");
-  font-weight: 400;
-}
+// @font-face {
+//   font-family: "Rubik-Regular";
+//   src: url(../fonts/Rubik-Regular.ttf);
+//   src: url(../fonts/Rubik-Regular.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Regular.ttf) format("truetypefont"), url(../fonts/Rubik-Regular.svg) format("svg");
+//   font-weight: 300;
+// }
+// @font-face {
+//   font-family: "Rubik-Medium";
+//   src: url(../fonts/Rubik-Medium.ttf);
+//   src: url(../fonts/Rubik-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Medium.ttf) format("truetypefont"), url(../fonts/Rubik-Medium.svg) format("svg");
+//   font-weight: 400;
+// }
 
 @mixin placeholder {
   $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
@@ -353,7 +354,7 @@ font-size: 18px;
     a{
       font-family: "Rubik";
       font-weight: 100;
-      letter-spacing: 1px;
+
       color:#fff;
       &:hover{
         color: #fff;
@@ -375,7 +376,7 @@ font-size: 18px;
 .font-rubik{
   font-family: "Rubik";
   font-weight: 100;
-  letter-spacing: 1px;
+
 }
 .font-rubikm{
   font-family: "Rubik";
@@ -578,7 +579,10 @@ opacity: 1;
   background-size: cover;
   background-position:center;
   padding-bottom: 35px;
-border-bottom: 1px solid;
+    box-shadow: 4px 3px 1px #eee;
+    -webkit-box-shadow: 4px 3px 1px #eee;
+    -moz-box-shadow: 4px 3px 1px #eee;
+    ms-box-shadow: 4px 3px 1px #eee;
 }
 .mt50{
   margin-top: 50px;
