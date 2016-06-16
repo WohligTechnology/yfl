@@ -63,7 +63,7 @@ $font-family-serif: "Otamaep", "Roboto", "PlayfairDisplay", "RubikRegular","Rubi
 }
 body {
   padding-top: 98px;
-  font-family: $font-family-sans-serif; 
+  font-family: $font-family-sans-serif;
 }
 img.loading {
   text-align: center;
@@ -232,11 +232,11 @@ font-family: "rubik";
 
 }
 .font-big{
-  font-size: 62px;
+  font-size: 50px;
 
 }
 .font-small{
-  font-size: 20px;
+  font-size: 14px;
 }
 .mt20{
   margin-top: 20px;
@@ -256,15 +256,13 @@ font-family: "rubik";
 .mt40{
   margin-top: 40px;
 }
-.f65{
-  font-size: 65px;
+.font55{
+  font-size: 55px;
 
 }
-.f30{
-  font-size: 30px;
-}
-.f34{
-  font-size: 34px;
+
+.f24{
+  font-size: 24px;
 }
 .connected{
   padding-top: 30px;
@@ -273,14 +271,14 @@ font-family: "rubik";
   border-top: 1px solid #fff;
   padding-top:50px;
 }
-.f45{
-  font-size: 45px;
+// .f45{
+//   font-size: 45px;
+// }
+.font30{
+  font-size: 30px;
 }
-.f35{
-  font-size: 35px;
-}
-.f55{
-  font-size: 55px;
+.f40 {
+    font-size: 40px;
 }
 .line-130{
   line-height: 130%;
@@ -296,7 +294,7 @@ font-size: 18px;
 .yoga-info{
   padding: 100px 0px;
   p{
-    font-size: 52px;
+    font-size: 40px;
     &:after{
       background: url(../img/2.png)no-repeat;
       content: "";
@@ -307,9 +305,9 @@ font-size: 18px;
           z-index: 99;
           display: inline-block;
           position: absolute;
-          top: 60px;
+          top: 50px;
           bottom: 0px;
-          right: 183px;
+          right: 50px;
     }
     &:before{
       background: url(../img/1.png)no-repeat;
@@ -321,9 +319,9 @@ font-size: 18px;
           z-index: 99;
           display: inline-block;
           position: absolute;
-          top: -40px;
-          bottom: 0px;
-          left: 220px;
+
+          bottom: 20px;
+          left:100px;
     }
   }
 }
@@ -344,6 +342,9 @@ font-size: 18px;
 }
 .padding0{
   padding: 0px;
+}
+.pl0{
+  padding-left: 0px;
 }
 .list-style{
   li{
@@ -392,7 +393,7 @@ font-size: 18px;
  height: 32px;
  width: 32px;
  padding: 7px 7px;
- margin: 0px 7px;
+ margin: 0px 4px;
  a{
    i{
      color: #737373;
@@ -524,10 +525,10 @@ opacity: 1;
     right: 80px;
     outline: 0;
   }
-  .flex-control-nav {
-
-    display: none;
-}
+//   .flex-control-nav {
+//
+//     display: none;
+// }
 }
 .f40{
   font-size: 40px;
@@ -563,7 +564,7 @@ opacity: 1;
     }
 }
 .btn{
-  font-size: 24px;
+  font-size: 16px;
   padding: 8px 25px;
   font-weight: 400;
 }
@@ -739,6 +740,9 @@ padding: 0px 10px;
 }
 .float-right{
   float: right;
+}
+.mar30{
+      margin: 0px 30px;
 }
 @import "fancybox-override";
 @import "mobile";

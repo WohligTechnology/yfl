@@ -78,17 +78,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     {
       img:"img/s3.png",
       head: "yoga classes",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     },
     {
         img:"img/s3.png",
       head: "yoga classes",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     },
     {
         img:"img/s3.png",
       head: "yoga classes",
-      descp: "Sed ut perspiciatis unde omnisiste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     }
   ];
 
