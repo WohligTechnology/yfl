@@ -15,6 +15,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     templateUrl: "views/template.html",
     controller: 'HomeCtrl'
   })
+    .state('restaurant-detail', {
+    url: "/restaurant-detail",
+    templateUrl: "views/template.html",
+    controller: 'RestaurantDetailCtrl'
+  })
     .state('restaurant', {
     url: "/restaurant",
     templateUrl: "views/template.html",

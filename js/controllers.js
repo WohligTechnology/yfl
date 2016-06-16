@@ -186,4 +186,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
      $scope.overStar = value;
      $scope.percent = 100 * (value / $scope.max);
    };
+})
+.controller('RestaurantDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("restaurant-detail");
+  $scope.menutitle = NavigationService.makeactive("Restaurant-Detail");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.loveSlider = [
+    {
+      img:"img/r1.jpg"
+
+    },
+    {
+      img:"img/r2.jpg"
+
+    },
+    {
+      img:"img/r1.jpg"
+
+    },
+    {
+      img:"img/r2.jpg"
+
+    }
+  ];
+
 });
