@@ -144,6 +144,9 @@ nav {
 .color-green{
   color:$green;
 }
+.f13{
+  font-size:13px;
+}
 .com {
     .carousel {
         .flexslider {
@@ -607,6 +610,11 @@ nav {
   background-size: cover;
   background-position: center;
 }
+.bg-bks{
+  background: url(../img/brush.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .bg-color {
 @extend .bg-bk;
     padding-bottom: 35px;
@@ -921,6 +929,12 @@ border-bottom:0px solid transparent;
 border-top-right-radius: 0px;
 border-top-left-radius: 0px;
 }
+}
+.hypen{
+  background-color: #f5bf33;
+color: $second;
+padding: 0px 5px;
+border-radius: 4px;
 }
 @import "fancybox-override";
 @import "mobile";
