@@ -210,5 +210,73 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     }
   ];
+  $scope.accordian = [];
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+  $scope.rowdata = [
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
 
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+    }
+  ];
 });

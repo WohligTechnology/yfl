@@ -348,6 +348,15 @@ nav {
 .pl0 {
     padding-left: 0;
 }
+.custom-li {
+  ul{
+    display: block;
+    list-style: none;
+    li{
+      display: inline-block;
+    }
+  }
+}
 .list-style {
     li {
         list-style: none;
@@ -845,6 +854,17 @@ nav {
 }
 .cpointer {
     cursor: pointer;
+}
+.social-link{
+  ul{
+    li{
+      a{
+        img{
+          width: 80px;
+        }
+      }
+    }
+  }
 }
 @import "fancybox-override";
 @import "mobile";
