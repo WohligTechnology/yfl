@@ -262,6 +262,9 @@ nav {
 .font500{
   font-weight: 500 !important;
 }
+.font-bold{
+  font-weight: 700 !important;
+}
 .font-big {
     font-size: 50px;
 }
@@ -935,6 +938,58 @@ border-top-left-radius: 0px;
 color: $second;
 padding: 0px 5px;
 border-radius: 4px;
+}
+.pos-abs{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  h1{
+    font-weight: 700;
+color:#fff;
+  }
+}
+.pads {
+    padding: 35px 0px;
+}
+.width{
+  width: 100%;
+}
+.bg-blue{
+  background-color: $green;
+
+color: #fff;
+h3{
+      padding: 10px 0px;
+}
+}
+.active{
+  @extend .bg-blue;
+  background-color: #f5bf33;
+      border-bottom: 9px solid #dca310;
+}
+.top-right-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.read-more{
+  button{
+    min-height: 40px;
+padding: 0px 36px;
+font-size: 15px;
+font-weight: 400;
+border: 0px;
+
+  }
+}
+.mb30{
+  margin-bottom: 30px;
+}
+.border-box {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 15px 0px 15px 0px;
 }
 @import "fancybox-override";
 @import "mobile";
