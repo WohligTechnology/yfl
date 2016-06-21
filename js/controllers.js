@@ -209,41 +209,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   ];
   $scope.rowdata = [
     {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
 
     },
     {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
-    },
-    {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
-
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
 
     },
     {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
 
 
     },
     {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
 
-
-    },
-    {
-      img:"img/m1.jpg",
-      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
 
     }
   ];
