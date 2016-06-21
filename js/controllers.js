@@ -358,7 +358,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
      $scope.percent = 100 * (value / $scope.max);
    };
 
-   $scope.tab = 'new';
+   $scope.tab = 'article';
 $scope.classa = 'active';
 $scope.classb = '';
 
