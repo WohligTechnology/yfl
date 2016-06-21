@@ -1065,5 +1065,17 @@ width: 100%;
     }
   }
 }
+.recipe{
+  h4{
+    color:$green;
+    font-weight: 500;
+  }
+  p{
+    color: $third;
+    span{
+      color:$green;
+    }
+  }
+}
 @import "fancybox-override";
 @import "mobile";
