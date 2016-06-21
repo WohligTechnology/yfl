@@ -124,6 +124,11 @@ a {
 nav {
     background: url('../img/header-bg.png') no-repeat #fff;
 }
+.bg-like {
+    background: url('../img/bg-like.png') no-repeat #47a7a2;
+    background-size: cover;
+background-position: top right;
+}
 // header end
 // home
 .flexslider {
@@ -757,6 +762,9 @@ nav {
     width: 100%;
     height: 100%;
 }
+.ml15{
+  margin-left: 15px;
+}
 .font-light {
     font-weight: 400;
 }
@@ -990,6 +998,72 @@ border: 0px;
     display: inline-block;
     border: 1px solid #ccc;
     padding: 15px 0px 15px 0px;
+}
+.pos-top{
+      padding: 30px 0px;
+}
+.share{
+  &:hover{
+    color:#fff;
+  }
+}
+.other-article{
+  h1{
+    border-bottom: 1px solid $third;
+        padding-bottom: 10px;
+  }
+}
+.msg{
+  textarea{
+    background: #ebebeb;
+border-color: #c2c2c2;
+resize: none;
+width: 100%;
+@include placeholder {
+    color: #000;
+
+}
+  }
+}
+.user-img {
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    border-radius: 100%;
+    width: 120px;
+    margin: 0 auto;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.box-comment {
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+.count{
+  a{
+    color:$second;
+    font-size: 18px;
+    &:hover{
+        color:$second;
+    }
+  }
+}
+.bg-comment {
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.art-list{
+  a{
+    font-size: 18px;
+    font-weight: 500;
+    &:hover{
+      color:$green;
+    }
+  }
 }
 @import "fancybox-override";
 @import "mobile";
