@@ -187,6 +187,75 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
      $scope.percent = 100 * (value / $scope.max);
    };
 })
+.controller('ArticleDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("article-detail");
+  $scope.menutitle = NavigationService.makeactive("Article-Detail");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+  $scope.loveSlider = [
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    }
+  ];
+  $scope.rowdata = [
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+
+    },
+    {
+      img:"img/m1.jpg",
+      title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
+      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+
+    }
+  ];
+  $scope.rate = 7;
+   $scope.max = 10;
+   $scope.isReadonly = false;
+
+   $scope.hoveringOver = function(value) {
+     $scope.overStar = value;
+     $scope.percent = 100 * (value / $scope.max);
+   };
+})
 .controller('ArticleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("article");
   $scope.menutitle = NavigationService.makeactive("Article");
