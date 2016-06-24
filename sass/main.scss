@@ -488,7 +488,7 @@ background-position: top right;
     }
     .flex-direction-nav a.flex-prev:before {
         content: '';
-        background: url("../img/left.png") no-repeat center;
+        background: url("../img/u.png") no-repeat center;
         width: 64px;
         height: 62px;
     }
@@ -868,6 +868,21 @@ background-position: top right;
 .float-right {
     float: right;
 }
+
+.reads-more{
+  display: none;
+  text-align: center;
+  .btn-green{
+    min-height: 50px;
+    padding: 0px 36px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 0px;
+    width: 95%;
+    margin-top: 10px;
+  }
+}
+
 .mar30 {
     margin: 0 30px;
 }
@@ -1077,5 +1092,32 @@ width: 100%;
     }
   }
 }
+//added to home by ruchira//
+.subscribtion{
+  background-color: #000;
+  .subscribtion-text{
+    li {
+        color: #fff;
+        border-radius: 0;
+        height:none;
+        width: none;
+        padding: 7px;
+        margin: 0 4px;
+        display: inline-block;
+      }
+  }
+}
+.inline{
+  display: inline-block;
+}
+
+
+
+//added to home by ruchira//
+
+
+
+
+
 @import "fancybox-override";
 @import "mobile";

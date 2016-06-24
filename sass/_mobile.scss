@@ -150,11 +150,134 @@ body {
 .mt38 {
     margin-top: 26px;
 }
+
+
 body {
   padding-top: 70px;
   font-family: $font-family-sans-serif;
 }
+//article-detail starts//
+.float-right {
+    float: right;
 }
+.user-img{
+  width: 70px;
+  height: 70px;
+}
+.reads-more{
+  display: block;
+}
+.read-more{
+  display: none;
+}
+
+.art-title{
+  h4{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+//article-detail ends//
+//footer//
+
+.connected{
+  text-align: center;
+}
+
+.neu {
+  p{
+    font-size: 11px;
+  }
+
+}
+.list{
+  text-align: center;
+}
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+//footer//
+
+}
+
 @media (max-width:480px) {
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 460px){
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .neu {
+    p{
+      font-size: 7px;
+    }
+
+  }
+  .list{
+    text-align: center;
+  }
+  .float-left{
+    float: left;
+  }
+
+  .float-right{
+    float: right;
+  }
+  .user-img{
+    width: 50px;
+    height: 50px;
+  }
+  .list-inline li {
+      background: #fff;
+      border-radius: 100%;
+      height: 23px;
+      width: 23px;
+      padding: 2px;
+      margin: 3px 2px;
+  }
+  .list-inline li a i {
+    font-size: 13px;
+}
+
+.art-data{
+  p{
+    font-size: 10px;
+  }
+}
+
+.art-date{
+  margin-top: 10px;
+  span{
+    font-size: 10px;
+  }
+}
+.art-title{
+  h4{
+    font-size: 14px;
+  }
+}
 
 }
