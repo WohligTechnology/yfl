@@ -92,6 +92,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     }
   ];
 
+  $scope.teacher = [
+    {
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+    },
+    {
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+    },
+    {
+      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+    }
+
+  ];
+
+
+
   $scope.foodSection = [
     {
       img:"img/s4.png",
