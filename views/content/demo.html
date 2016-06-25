@@ -1,0 +1,103 @@
+<section class="yoga-info text-center">
+<div class="container-fluid">
+  <div class="row">
+    <div class="">
+      <div class="position-relative">
+        <flex-slider class="carousel" flex-slide="teacher in teacher track by $index" direction-nav="false" animation="slide" animation-loop="true">
+          <li>
+        <p>{{teacher.descp}}</p>
+        </li>
+            </flex-slider>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="food-section text-center">
+  <flex-slider class="carousel" flex-slide="food in foodSection track by $index" direction-nav="false" animation="slide" animation-loop="true">
+    <li>
+      <div class="food-detail bg-slider">
+        <img ng-src="{{food.img}}" alt="" class="img-responsive">
+        <div class="yoga-detail">
+        <h2 class="head text-up f65 font55 font-jura">{{food.head}}</h2>
+        <p class="descp f30  f24">{{food.descp}}</p>
+        <div class="button-more">
+          <div class="mt30">
+            <button class="btn btn-dark bg-blue text-uppercase btn-black">know more</button>
+            <!-- <button class="btn btn-dark text-uppercase btn-black mtop10">know more</button> -->
+          </div>
+        </div>
+        </div>
+      </div>
+    </li>
+  </flex-slider>
+ </section>
+<section>
+  <div class="row-flex">
+    <div class="col-md-6">
+    <div class="row">
+    <div class="col-md-6">
+      <figure>
+        <!-- <img src="img/s1.png" class="img-responsive" alt=""> -->
+      </figure>
+    </div>
+    <div class="col-md-6">
+      <h2>trending food recipes</h2>
+      <div class="mt30">
+        <button class="btn btn-dark bg-blue text-uppercase btn-black">know more</button>
+        <button class="btn btn-dark bg-blue text-uppercase btn-black">share yours</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+      <div class="col-md-6">
+        <!-- <img src="img/s1.png" class="img-responsive" alt=""> -->
+      </div>
+      <div class="col-md-6">
+        <h2>article of the week</h2>
+        <div class="mt30">
+          <button class="btn btn-dark bg-blue text-uppercase btn-black">read more</button>
+          <button class="btn btn-dark bg-blue text-uppercase btn-black">write yours</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-flex">
+    <div class="col-md-6">
+    <div class="healthy-restaurants">
+      <div class="yog-detail text-center">
+    <h2 class="text-up f55 f40 font-jura">healthy restaurants you like</h2>
+    <span>Sed ut perspiciatis unde omnis</span>
+    <div class="teachers-names">
+      <div class="expert-teacher">
+        <div class="img"></div>
+        <span class="display-block">Sanjana Singh</span>
+        <span class="display-block">Expertise in Hathe Yoga</span>
+      </div>
+      <div class="expert-teacher">
+          <div class="img"></div>
+          <span class="display-block">Sanjana Singh</span>
+          <span class="display-block">Expertise in Hathe Yoga</span>
+      </div>
+      <div class="expert-teacher">
+          <div class="img"></div>
+          <span class="display-block">Sanjana Singh</span>
+          <span class="display-block">Expertise in Hathe Yoga</span>
+      </div>
+    </div>
+    <a class="text-up" href="">get on the list</a>
+  </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="food-facts">
+        <h2 class="text-up text-center">healthy food facts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio accusantium autem cum voluptatum laudantium voluptatibus cupiditate repellendus, sequi eos nulla, illo porro dolorum harum eum aperiam corporis iusto qui neque.</p>
+      </div>
+    </div>
+  </div>
+</section>
