@@ -25,6 +25,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
   ];
+
+  $scope.imageslider=[
+    {
+      img:"img/bg2.png",
+    },
+    {
+      img:"img/bg2.png",
+    },
+    {
+      img:"img/bg2.png",
+    }
+  ];
   $scope.food = [
     {
       img:"img/s2.png",

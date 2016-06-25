@@ -338,6 +338,9 @@ span {
 .f40 {
     font-size: 40px;
 }
+.f43{
+  font-size: 43px;
+}
 .line-130 {
     line-height: 130%;
 }
@@ -393,6 +396,11 @@ span {
             position: relative;
         }
     }
+}
+.teachers{
+  span{
+    font-size: 18px;
+  }
 }
 .love-section {
     padding: 20px 0;
@@ -504,14 +512,58 @@ span {
 .padd30 {
     padding: 30px 30px 50px;
 }
-.yoga-detail {
+.yoga-detail,.yog-detail {
+  width: 100%;
     .img {
-        height: 100px;
-        width: 100px;
-        background-color: grey;
+        height: 75px;
+        width: 75px;
+        background-color: #ccc;
         border-radius: 100%;
+        margin: 0 auto;
+    }
+    // h2{
+    //   font-size: 34px;
+    // }
+    a{
+      display: inline-block;
+      margin-top: 50px;
+      color: #333;
+      text-align: center;
+      border-bottom: 2px solid #333;
+      font-size: 19px
     }
 }
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+}
+.teacher-border{
+  border-right: 1px solid #000;
+}
+.know-teacher{
+  margin: 20px 0;
+}
+.teachers-names{
+  margin: 10px 0;
+}
+.expert-teacher{
+  display: inline-block;
+    padding: 0 16px;
+    border-right: 2px solid #000;
+}
+.healthy-restaurants{
+  background-color: #f6f6f6;
+    padding: 30px 0;
+}
+
+.food-facts{
+  width: 300px;
+  margin-left: 171px;
+  margin-top: 20px;
+}
+
 .love-slider {
     // .carousel li {
     //   margin-right: 0 !important;
@@ -621,6 +673,9 @@ span {
 }
 .display-inline {
     display: inline-block;
+}
+.display-block{
+  display: block;
 }
 .btn-white {
     @include button-variant($green, white, white);
@@ -1124,10 +1179,10 @@ span {
 }
 //added to home by ruchira//
 .subscribtion {
-    background-color: #000;
+    background-color: #ccc;
     .subscribtion-text {
         li {
-            color: #fff;
+            color: #333;
             border-radius: 0;
             height: none;
             width: none;
@@ -1140,7 +1195,7 @@ span {
 .inline {
     display: inline;
     li+li:before {
-      color: #FFF;
+      color: #333;
       content: '\f111';
       font-size: 12px;
       margin-right: 1.5em;
@@ -1149,6 +1204,9 @@ span {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
     }
+}
+.trending{
+  padding: 45px 30px 90px 10px;
 }
 //added to home by ruchira//
 @import "fancybox-override";
