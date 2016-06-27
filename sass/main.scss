@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,300,500,700);
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -16,40 +15,13 @@ $black-bg: #2e2e2e !default;
 $green: #51b1ac !default;
 $second: #4e4f51 !default;
 $third: #464646 !default;
-$font-family-sans-serif: "Jura","Otamaep", "Roboto", "PlayfairDisplay", "Rubik", "neutra", sans-serif !default;
-$font-family-serif: "Jura","Otamaep", "Roboto", "PlayfairDisplay", "Rubik" "neutra",serif !default;
+$font-family-sans-serif: "Rubik", sans-serif !default;
+$font-family-serif: "Rubik",serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@font-face {
-    font-family: "Otamaep";
-    src: url("../fonts/Otamaep.otf");
-    src: url("../fonts/Otamaep.eot#iefix") format("embedded-opentype"), url("../fonts/Otamaep.otf") format("opentype"), url("../fonts/Otamaep.svg") format("svg");
-}
-@font-face {
-    font-family: "PlayfairDisplay";
-    src: url("../fonts/PlayfairDisplay-Black.otf");
-    src: url("../fonts/PlayfairDisplay-Black.eot#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Black.otf") format("opentype"), url("../fonts/PlayfairDisplay-Black.svg") format("svg");
-}
-@font-face {
-    font-family: "neutra";
-    src: url("../fonts/neutra.otf");
-    src: url("../fonts/neutra.eot#iefix") format("embedded-opentype"), url("../fonts/neutra.otf") format("opentype"), url("../fonts/neutra.svg") format("svg");
-}
 @font-face {
     font-family: "Jura";
     src: url("../fonts/Jura-Bold.ttf");
 }
-// @font-face {
-//   font-family: "Rubik-Regular";
-//   src: url(../fonts/Rubik-Regular.ttf);
-//   src: url(../fonts/Rubik-Regular.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Regular.ttf) format("truetypefont"), url(../fonts/Rubik-Regular.svg) format("svg");
-//   font-weight: 300;
-// }
-// @font-face {
-//   font-family: "Rubik-Medium";
-//   src: url(../fonts/Rubik-Medium.ttf);
-//   src: url(../fonts/Rubik-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/Rubik-Medium.ttf) format("truetypefont"), url(../fonts/Rubik-Medium.svg) format("svg");
-//   font-weight: 400;
-// }
 @mixin placeholder {
     $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
     @each $placeholder in $placeholders {
@@ -228,7 +200,7 @@ nav {
 }
 .footer-menu {
     background-color: #333;
-    font-family: "rubik";
+
 }
 .connect-with-us {
     background-color: #282828;
@@ -267,11 +239,11 @@ nav {
 }
 p,
 span {
-    font-family: "rubik";
+
     font-weight: 300;
 }
 .font-rubiks {
-    font-family: "rubik";
+
     font-weight: 300;
 }
 .font-otamaep {
@@ -323,11 +295,11 @@ span {
     font-size: 22px;
 }
 .connected {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .border-white {
     border-top: 1px solid #fff;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 // .f45{
 //   font-size: 45px;
@@ -434,7 +406,7 @@ span {
         list-style: none;
         padding: 10px 0;
         a {
-            font-family: "Rubik";
+
             font-weight: 100;
             color: #fff;
             &:hover {
@@ -454,11 +426,11 @@ span {
     font-size: 16px;
 }
 .font-rubik {
-    font-family: "Rubik";
+
     font-weight: 100;
 }
 .font-rubikm {
-    font-family: "Rubik";
+
     font-weight: 400;
     // letter-spacing: 1px;
 }
@@ -467,13 +439,12 @@ span {
 }
 .list-inline {
     li {
-        background: #fff;
-        /* color: black; */
-        border-radius: 100%;
-        height: 32px;
-        width: 32px;
-        padding: 7px;
-        margin: 0 4px;
+      background-color: #fff;
+      border-radius: 32px;
+      height: 32px;
+      width: 32px;
+      line-height: 40px;
+      text-align: center;
         a {
             i {
                 color: #737373;
@@ -500,7 +471,7 @@ span {
     color: #fff;
     padding: 10px 20px;
     font-size: 18px;
-    font-family: "rubik";
+
     &:hover {
         color: #fff !important;
         outline: 0;
@@ -823,7 +794,7 @@ span {
     box-shadow: 3px 6px 18px 0 rgba(0, 0, 0, 0.2);
 }
 .body-img {
-    font-family: "rubik";
+
     border: 1px solid #ececec;
     /* box-shadow: 0px 0px 0px 0px; */
     box-shadow: 2px 0 8px 0 #ececec;
@@ -862,7 +833,7 @@ span {
     background: #f4be33;
     display: inline-block;
     padding: 5px;
-    font-family: "rubik";
+
 }
 .top-right {
     padding: 10px;
@@ -943,14 +914,10 @@ span {
     padding: 0 20px;
 }
 .neu {
-    padding: 30px 10px 40px;
+    padding: 20px 10px 35px;
     p {
-        font-family: "neutra";
         margin: 0;
     }
-}
-.font-neutra {
-    font-family: "neutra";
 }
 .float-left {
     float: left;
