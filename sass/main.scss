@@ -160,7 +160,7 @@ nav {
     background-color: #fafafa;
 }
 .yoga-classes-slider {
-    background-color: #fdfdfd;
+    // background-color: #fdfdfd;
     .carousel {
         .flexslider {
             .flex-control-nav {
@@ -176,7 +176,7 @@ nav {
     background-color: #f5f5f5;
 }
 .food-section {
-    background-color: #F2F2F2;
+    // background-color: #F2F2F2;
     .carousel {
         .flexslider {
             .flex-control-nav {
@@ -218,14 +218,18 @@ nav {
         position: relative;
     }
 }
+
 .color-black {
     color: #000;
 }
-.yoga-detail {
+.yoga-detail,.food-detail {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.f21{
+  font-size: 21px;
 }
 .text-up {
     text-transform: uppercase;
@@ -324,10 +328,11 @@ span {
         color: #fff;
     }
 }
-.yoga-info {
+.quote {
+  .bg-slider{
     padding: 100px 0;
-    p {
-        font-size: 40px;
+  }
+    .quotes{
         &:after {
             background: url("../img/2.png") no-repeat;
             content: "";
@@ -338,8 +343,8 @@ span {
             z-index: 99;
             display: inline-block;
             position: absolute;
-            bottom: 0;
-            right: 60px;
+            bottom: -75px;
+            right: -200px;
         }
         &:before {
             background: url("../img/1.png") no-repeat;
@@ -351,8 +356,8 @@ span {
             z-index: 99;
             display: inline-block;
             position: absolute;
-            bottom: 37px;
-            left: 115px;
+            bottom: 20px;
+            left: -140px;
         }
     }
 }
@@ -370,6 +375,7 @@ span {
     }
 }
 .teachers{
+  border-bottom: 2px solid #000;
   span{
     font-size: 18px;
   }
@@ -504,6 +510,39 @@ span {
       font-size: 19px
     }
 }
+.healthy{
+  .img {
+      height: 75px;
+      width: 75px;
+      background-color: #fff;
+      border-radius: 100%;
+      margin: 0 auto;
+  }
+  .flex-control-nav {
+     width: 15%;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    text-align: center;
+}
+}
+.health-detail{
+  padding: 50px 0;
+  p{
+    width: 50%;
+    text-align: justify;
+    margin-left: 133px;
+  }
+}
+
+
+
+// .flexslider .slides > li {
+//   width: 366px;
+//     margin-right: 0px;
+//     float: left;
+//     display: block;
+// }
 .flex-control-nav {
     width: 100%;
     position: absolute;
@@ -1173,7 +1212,10 @@ span {
     }
 }
 .trending{
-  padding: 93px 30px 93px 10px;
+  padding: 50px 30px 36px 10px;
+  .btn{
+    font-size: 14px;
+  }
 }
 //added to home by ruchira//
 @import "fancybox-override";

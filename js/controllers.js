@@ -106,32 +106,60 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.teacher = [
     {
-      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natexplicab."
     },
     {
-      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natexplicab."
     },
     {
-      descp: "Sed ut perspiciatis unde omnis iste natus error sit."
+      descp: "Sed ut perspiciatis unde omnis iste natexplicab."
     }
 
   ];
 
+$scope.bookShow=[
+  {
+    img:"img/slider.png"
 
+  },
+  {
+    img:"img/slider.png"
 
-  $scope.foodSection = [
+  },
+  {
+    img:"img/slider.png"
+
+  }
+];
+
+$scope.healthSlider = [
+  {
+    head: "HEALTHY FOOD FACTS",
+    descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat.Sed ut perspiciatis unde omnis iste natus error sit voluptat."
+  },
+  {
+    head: "HEALTHY FOOD FACTS",
+    descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat.Sed ut perspiciatis unde omnis iste natus error sit voluptat."
+  },
+  {
+    head: "HEALTHY FOOD FACTS",
+    descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat.Sed ut perspiciatis unde omnis iste natus error sit voluptat."
+  }
+];
+
+  $scope.foodSlider = [
     {
-      img:"img/s4.png",
+      img:"img/Rectangle.png",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
-      img:"img/s4.png",
+      img:"img/Rectangle.png",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
-      img:"img/s4.png",
+      img:"img/Rectangle.png",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     }

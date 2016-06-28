@@ -80,15 +80,25 @@
       <div class="teachers">
         <div class="row-flex">
           <div class="col-flex">
-
-
-            <div class="trending text-center">
-              <h2 class="text-up f55 f43 font-jura">TRENDING YOGA STYLES</h2>
-                <span>Sed ut perspiciatis unde omnis perspiciatis unde omnis</span>
-                <div class="mt30">
-                  <button class="btn btn-dark bg-blue text-uppercase btn-black"> Book your class</button>
-                </div>
-                </div>
+            <div class="row-flex">
+              <div class="col-flex">
+                <img src="img/slider.png" class="img-responsive" alt="">
+                <!-- <flex-slider class="carousel " flex-slide="book in bookShow track by $index" direction-nav="false" animation="slide" animation-loop="true">
+                  <li>
+                    <img ng-src="{{book.img}}" class="img-responsive" alt="slider">
+                  </li>
+                </flex-slider> -->
+              </div>
+              <div class="col-flex">
+                <div class="trending text-center">
+                  <h2 class="text-up f55 f43 font-jura">TRENDING YOGA STYLES</h2>
+                    <span>Sed ut perspiciatis unde omnis perspiciatis unde omnis</span>
+                    <div class="mt15">
+                      <button class="btn btn-dark bg-blue text-uppercase btn-black"> Book your class</button>
+                    </div>
+                    </div>
+              </div>
+            </div>
 
         </div>
         </div>
@@ -122,7 +132,125 @@
     </div>
   </div>
 </section>
-
+<section class="quote">
+  <div class="row-flex">
+    <div class="col-flex">
+      <div class="quote-slider">
+        <flex-slider class="carousel " flex-slide="teach in teacher track by $index" direction-nav="false" animation="slide" animation-loop="true">
+          <li>
+            <div class="yogaclass-inside bg-slider">
+              <div class="food-detail text-center">
+              <p class="descp  quotes font30 f21 line-130">{{teach.descp}}</p>
+            </div>
+          </div>
+          </li>
+        </flex-slider>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="food-section">
+  <div class="row-flex">
+    <div class="col-flex">
+      <div class="food-slider">
+        <flex-slider class="carousel " flex-slide="food in foodSlider track by $index" direction-nav="false" animation="slide" animation-loop="true">
+          <li>
+            <div class="yogaclass-inside bg-slider">
+              <img ng-src="{{food.img}}" alt="" class="img-responsive">
+              <div class="food-detail text-center">
+              <h2 class="heading text-up f65 font55 font-jura">{{food.head}}</h2>
+              <p class="descp  f30 f21 line-130">{{food.descp}}</p>
+            </div>
+          </div>
+          </li>
+        </flex-slider>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="trends">
+  <div class="recipes">
+<div class="row-flex">
+  <div class="col-flex">
+    <div class="row-flex">
+      <div class="col-flex">
+        <!-- <img src="img/s1.png" class="img-responsive" alt="image"> -->
+      </div>
+      <div class="col-flex">
+        <div class="trending ">
+          <h2 class="text-up text-center f55 f40 font-jura">trending food recipes</h2>
+            <span class="text-center">Sed ut perspiciatis unde omnis perspiciatis unde omnis</span>
+            <div class="mt15">
+              <button class="btn btn-dark bg-blue text-uppercase btn-black"> READ MORE</button>
+                <button class="btn btn-dark bg-blue text-uppercase btn-black"> share yours</button>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-flex">
+    <div class="row-flex">
+      <div class="col-flex">
+        <!-- <img src="img/s1.png" class="img-responsive" alt="image"> -->
+      </div>
+      <div class="col-flex">
+        <div class="trending ">
+          <h2 class="text-up text-center f55 f40 font-jura">ARTICLE OF THE WEEK</h2>
+            <span class="text-center">Sed ut perspiciatis unde omnis perspiciatis unde omnis</span>
+            <div class="mt15">
+              <button class="btn btn-dark bg-blue text-uppercase btn-black"> READ MORE</button>
+                <button class="btn btn-dark bg-blue text-uppercase btn-black"> write yours</button>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="healthy">
+<div class="row-flex">
+  <div class="col-flex">
+    <div class="yoga-teachers text-center  bg-slider">
+        <img src="img/bg2.png" alt="" class="img-responsive">
+        <div class="yoga-detail">
+      <h2 class="text-up f55 f40 font-jura">healthy restaurants you like</h2>
+      <span>Sed ut perspiciatis unde omnis</span>
+      <div class="teachers-names">
+        <div class="expert-teacher">
+          <div class="img"></div>
+          <span class="display-block">Sanjana Singh</span>
+          <span class="display-block">Expertise in Hathe Yoga</span>
+        </div>
+        <div class="expert-teacher">
+            <div class="img"></div>
+            <span class="display-block">Sanjana Singh</span>
+            <span class="display-block">Expertise in Hathe Yoga</span>
+        </div>
+        <div class="expert-teacher">
+            <div class="img"></div>
+            <span class="display-block">Sanjana Singh</span>
+            <span class="display-block">Expertise in Hathe Yoga</span>
+        </div>
+      </div>
+      <a class="text-up" href="">get on the list</a>
+    </div>
+    </div>
+  </div>
+  <div class="col-flex">
+    <flex-slider class="carousel " flex-slide="health in healthSlider track by $index" direction-nav="false" animation="slide" animation-loop="true">
+      <li>
+        <div class="yogaclass-inside bg-slider">
+          <div class="health-detail text-center">
+          <h2 class="heading text-up f40 font-jura">{{health.head}}</h2>
+          <p class="descp  f30 f21 line-130">{{health.descp}}</p>
+        </div>
+      </div>
+      </li>
+    </flex-slider>
+  </div>
+</div>
+</div>
+</div>
 <section class="love-section text-center">
   <div class="container">
 <div class="row">
