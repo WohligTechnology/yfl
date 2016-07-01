@@ -108,6 +108,15 @@ nav {
 .btn:focus{
   outline: 0;
 }
+.btn{
+  &:active{
+    &:focus{
+      outline: 0;
+    }
+  }
+
+}
+
 // header end
 // home
 .flexslider {
