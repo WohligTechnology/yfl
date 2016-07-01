@@ -105,6 +105,9 @@ nav {
     background-size: cover;
     background-position: top right;
 }
+.btn:focus{
+  outline: 0;
+}
 // header end
 // home
 .flexslider {
@@ -138,9 +141,9 @@ nav {
     }
 }
 .sign {
-    a {
+    .btn {
         &:hover {
-            color: #2e2e2e;
+            color: #fff;
         }
     }
 }
@@ -158,6 +161,9 @@ nav {
 }
 .food {
     background-color: #fafafa;
+}
+.relative{
+  position: relative;
 }
 .yoga-classes-slider {
     // background-color: #fdfdfd;
@@ -199,15 +205,15 @@ nav {
     padding: 0 0 40px;
 }
 .footer-menu {
-    background-color: #333;
+    background-color: #51b1ac;
 
 }
 .connect-with-us {
-    background-color: #282828;
+    background-color: #51b1ac;
     padding: 30px 50px 80px 30px;
 }
 .footer-main {
-    background-color: #51b1ac;
+    background-color: #333;
     color: #fff;
 }
 // home end
@@ -304,6 +310,20 @@ span {
 .border-white {
     border-top: 1px solid #fff;
     padding-top: 20px;
+}
+.connect-with-us{
+  .btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 54px;
+    background-color: #f7cf43;
+&:focus{
+  outline: 0;
+}
+
+  }
+
 }
 // .f45{
 //   font-size: 45px;
@@ -461,7 +481,7 @@ span {
 }
 .place {
     input {
-        height: 60px;
+        height: 54px;
         font-size: 16px;
         @include placeholder {
             color: #575757;
