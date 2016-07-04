@@ -65,6 +65,7 @@
 }
 .btn {
     font-size: 14px;
+    padding: 8px 20px;
 
 }
 .f55 {
@@ -114,6 +115,22 @@ body {
   padding-top: 65px;
   font-family: $font-family-sans-serif;
 }
+
+.subscribtion{
+  .subscribtion-text li{
+    padding: 0;
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.health-detail p {
+    margin-left: 178px;
+}
+
+
+
 }
 @media (max-width: $screen-xs-max){
   .f-sign {
@@ -177,9 +194,19 @@ body {
   }
 }
 
+.expert-teacher {
+    display: inline-block;
+    padding: 0 10px;
+    border: 0;
+    span{
+      font-size: 12px;
+    }
+  }
 
-
-
+  .yoga-detail a {
+      margin-top: 0;
+      font-size: 14px;
+  }
 
 //article-detail ends//
 //footer//
@@ -206,11 +233,112 @@ body {
 }
 //footer//
 
+.flex-direction-nav {
+  .flex-next {
+    right: 18px !important;
+}
+.flex-prev {
+    left: 18px;
+  }
+}
+
 }
 
 @media (max-width:480px) {
+  .btn {
+      font-size: 10px;
+      padding: 6px;
+  }
+  .health-detail{
+    p {
+     font-size: 14px;
+     margin-left: 99px;
+ }
+ h2{
+   font-size: 22px;
+ }
+  }
+
+
+  .food-section .carousel .flexslider .flex-control-nav {
+      bottom: 30px !important;
+  }
+
+
+  .healthy .flex-control-nav {
+      width: 22%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+  }
+// .bg-slider{
+//   top:100px;
+// }
+.com .carousel .flexslider .flex-control-nav {
+    top: 75% !important;
+}
+
+.yoga-classes-slider .carousel .flexslider .flex-control-nav {
+    bottom: 60px !important;
+}
+
+.quote{
+  p{
+    font-size: 20px;
+  }
+  .quotes:after {
+    right: -160px;
+}
+
+.quotes:before {
+  left: -103px;
+}
+
 
 }
+
+
+
+}
+
+@media (max-width:350px) {
+
+  .btn{
+    font-size: 8px;
+  }
+  .yoga-teachers img {
+      position: relative;
+      min-height: 310px;
+  }
+  .expert-teacher span {
+    font-size: 9px;
+}
+// .food-section{
+//   .yogaclass-inside{
+//       img{
+//         min-height: 200px;
+//       }
+//     }
+// }
+
+.food-detail{
+  h2{
+    margin: 0;
+    font-size: 18px;
+  }
+  p{
+    font-size: 11px;
+  }
+}
+.flex-control-paging li a {
+    width: 9px;
+    height: 9px;
+  }
+
+
+}
+
 
 @media only screen
 and (min-device-width : 320px)
@@ -257,6 +385,7 @@ and (max-device-width : 460px){
       width: 23px;
       padding: 2px;
       margin: 3px 2px;
+      line-height: 21px;
   }
   .list-inline li a i {
     font-size: 13px;
@@ -279,5 +408,43 @@ and (max-device-width : 460px){
     font-size: 14px;
   }
 }
+
+.expert-teacher {
+    padding: 0 2px;
+    span{
+      font-size: 9px;
+    }
+}
+
+.subscribtion{
+  .subscribtion-text li{
+  font-size: 16px;
+  }
+}
+
+.quote{
+  p{
+    font-size: 18px;
+  }
+  .quotes:after {
+    right: -139px;
+    transform: scale(0.6);
+}
+
+.quotes:before {
+  left: -99px;
+  transform: scale(0.6);
+}
+
+
+}
+
+.food-detail{
+  h2{
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
 
 }
