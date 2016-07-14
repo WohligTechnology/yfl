@@ -1,4 +1,4 @@
-<header>
+<header ng-controller="headerctrl">
   <nav class="navbar navbar-fixed-top">
     <div class="container">
       <!-- <div class="hamburger pull-left">
@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-md-2 text-center col-sm-2 col-xs-2">
           <div class="mt35">
-            <a href="">
+            <a href="" ng-click="getMenu();">
               <img src="img/option.png" alt="">
             </a>
           </div>
@@ -35,6 +35,18 @@
       <!-- <div class="collapse navbar-collapse" id="nav-collapse">
         <div ng-include="template.menu" class="template menu"></div>
       </div> -->
+      <div class="side-menu menu-out">
+          <span ng-click="closeMenu();" class="closemenu {{menu}}"><i class="ln-cross"></i></span>
+          <span class="pull-right close-icon"><i class="fa fa-2x fa-times-circle-o" ng-click="closeMenu();"></i></span>
+          <!-- <span class="heading-menu uppercase">Menu</span> -->
+          <div class="template menu" ng-include="template.menu"></div>
+
+          <div class="mt30">
+                    <button class="butns btn bg-blue text-up">Become a member</button>
+          </div>
+      </div>
     </div>
   </nav>
 </header>
+<!-- btn-1b
+btn-1 btn-1b -->

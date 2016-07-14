@@ -166,11 +166,28 @@ $scope.healthSlider = [
   ];
 })
 
-.controller('headerctrl', function($scope, TemplateService) {
-  $scope.template = TemplateService;
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    $(window).scrollTop(0);
-  });
+.controller('headerctrl', function($scope, TemplateService, $state) {
+    $scope.template = TemplateService;
+    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+        $(window).scrollTop(0);
+    });
+    // $scope.goToLogin = function() {
+    //     console.log("login");
+    //     $state.go('memberlogin');
+    // }
+    $scope.menu = "menu-out";
+    $scope.getMenu = function() {
+        $(".side-menu").addClass("menu-in");
+        $(".side-menu").removeClass("menu-out");
+    };
+    $scope.closeMenu = function() {
+        $(".side-menu").removeClass("menu-in");
+        $(".side-menu").addClass("menu-out");
+    };
+    $(".template.content").click(function() {
+        $(".side-menu").removeClass("menu-in");
+        $(".side-menu").addClass("menu-out");
+    });
 })
 
 .controller('RestaurantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -242,6 +259,8 @@ $scope.healthSlider = [
      $scope.percent = 100 * (value / $scope.max);
    };
 })
+
+
 .controller('ArticleDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("article-detail");
   $scope.menutitle = NavigationService.makeactive("Article-Detail");

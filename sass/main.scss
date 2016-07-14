@@ -1110,8 +1110,8 @@ span {
 }
 .active {
     @extend .bg-blue;
-    background-color: #f5bf33;
-    border-bottom: 9px solid #dca310;
+    background-color: transparent;
+    border-bottom: none;
 }
 .top-right-icon {
     position: absolute;
@@ -1246,6 +1246,178 @@ span {
     font-size: 14px;
   }
 }
+// side-menu
+.side-menu {
+    width: 300px;
+    height: 100%;
+  padding: 30px 40px 30px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-image: url("../img/bg-like.png");
+    background-color: #fff;
+    color: #333;
+    }
+
+.menu-in {
+    transform: translateX(0);
+    transition: all .3s linear;
+}
+
+.menu-out {
+    transform: translateX(-450px);
+    transition: all .3s linear;
+}
+
+.nav>li {
+    display: block;
+    position: relative;
+}
+.navbar-nav li{
+  float: none!important;
+  .col{
+    color: $green;
+    font-size: 45px;
+  }
+  a{
+    color: #000;
+    font-size: 16px;
+    &:hover{
+      background-color: transparent;
+    }
+  }
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.mt30{
+  .butns{
+    margin: 30px 0;
+    color: #fff;
+    &:hover{
+      color: #fff;
+      background-color: $green;
+    }
+  }
+}
+
+.log:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 35px;
+  background: url("../img/yoga.png") no-repeat;
+  background-size: contain;
+}
+
+.loging:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 35px;
+  background: url("../img/food.png") no-repeat;
+  background-size: contain;
+}
+
+.logs:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 35px;
+  background: url("../img/love.png") no-repeat;
+  background-size: contain;
+}
+
+
+// .closemenu {
+//     position: absolute;
+//     left: 20px;
+//     cursor: pointer;
+// }
+//
+//
+// .side-menu .navbar-nav {
+//     margin: 15px 0 0;
+//     float: none;
+// }
+// .side-menu .navbar-nav li a {
+//     padding: 15px 0;
+//     background-color: transparent!important;
+//     font-size: 16px;
+// }
+// header .navbar-default .navbar-nav>li>a {
+//     transition: all .3s linear;
+// }
+
+// header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>.active>a:focus, header .navbar-default .navbar-nav>.active>a:hover {
+//     color: #ff8621;
+// }
+
+// .side-menu .ask-jack {
+//     padding: 10px 50px;
+//     border-color: #fff;
+//     color: #fff;
+// }
+// .side-menu button {
+//     margin: 10px 0;
+//     -moz-transition: all .3s linear;
+//     -o-transition: all .3s linear;
+//     -webkit-transition: all .3s linear;
+//     transition: all .3s linear;
+// }
+// .btn {
+//     border-radius: 0;
+//     display: inline-block;
+//     font-weight: 400;
+//     text-align: center;
+//     vertical-align: middle;
+//     touch-action: manipulation;
+//     cursor: pointer;
+//     border: 1px solid transparent;
+//     white-space: nowrap;
+//     font-size: 14px;
+//     line-height: 1.42857;
+// }
+//
+//
+//   .clicks{
+//     border: 1px solid #fff;
+//     padding-left: 10px;
+//   padding: 8px 26px;
+//   margin-bottom: 5px;
+// }
+// .padding{
+//   padding: 15px 0 0;
+// }
+
+// .btn:focus  {
+//   outline: 0;
+//    color: #333;
+//
+// }
+// .btn-animate-become{
+//   &:hover{
+//     &:focus{
+//       color:#333;
+//     }
+//   }
+//   &:focus{
+//     outline: 0;
+//   color:#fff;
+//   }
+//   &:active{
+//     outline: 0;
+//   color:#fff;
+//   }
+// }
 //added to home by ruchira//
 @import "fancybox-override";
 @import "mobile";
