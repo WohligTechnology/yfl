@@ -195,6 +195,13 @@ $scope.healthSlider = [
   $scope.menutitle = NavigationService.makeactive("Restaurant");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.accordian = [];
+  $scope.accordian.push({
+    isFirstOpen: true,
+    isFirstDisabled: false
+  });
+
+
 
   $scope.loveSlider = [
     {

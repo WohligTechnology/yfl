@@ -1429,5 +1429,30 @@ span {
 .width100{
   width: 100%;
 }
+.ui-accordian{
+  .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-default > .panel-heading {
+    color: #ffffff;
+    background-color: #51b1ac;
+    border-color: rgb(224, 224, 224);
+}
+.panel-heading {
+    padding: 20px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+}
 @import "fancybox-override";
 @import "mobile";

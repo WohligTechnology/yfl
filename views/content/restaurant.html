@@ -6,14 +6,14 @@
                     <img ng-src="{{love.img}}" alt="" class="img-responsive">
 
 
-                <div class="slider-data">
-                    <h2 class="font-rubik color-white f40">Amica Cafe</h2>
-                    <h4 class="font-rubik color-white f28">Lorem Ipsum Dolor Sit Amet</h4>
-                    <h4 class="font-rubik color-white f28">Consectetuer ati.</h4>
-                    <div class="btn-know mt35">
-                        <button type="button" class="btn-white font-rubik text-up kno-btn" name="button">KNOW MORE</button>
+                    <div class="slider-data">
+                        <h2 class="font-rubik color-white f40 m-auto">Amica Cafe</h2>
+                        <h4 class="font-rubik color-white f28 mob-margin m-font12">Lorem Ipsum Dolor Sit Amet</h4>
+                        <h4 class="font-rubik color-white f28 mob-margin m-font12">Consectetuer ati.</h4>
+                        <div class="btn-know mt35 mar-mob">
+                            <button type="button" class="btn-white font-rubik text-up kno-btn" name="button">KNOW MORE</button>
+                        </div>
                     </div>
-                </div>
 
 
                 </div>
@@ -21,14 +21,15 @@
         </flex-slider>
     </div>
 </section>
-<section class="bg-black">
+<section class="bg-black hidden-xs">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
                 <div class="text-center">
                     <p class="font-rubikm color-white text-up f18">I am looking to journey to <span class="display-inline position-relative mr10"><input type="text" placeholder="COLABA" class="input-span f18 font-rubikm"><img src="img/close.png" class="close" alt=""></span>& Find a place that serves
                         <span class="display-inline position-relative mr10"><input type="text" placeholder="italian " class="input-span font-rubikm f18 text-up"><img src="img/close.png" class="close" alt=""></span></p>
-                    <p class="font-rubikm color-white text-up f18">Cuisine in the <span class="display-inline position-relative mr10"><input type="text" placeholder"afternoon" class="input-span f18 font-rubikm text-up" ><img src="img/close.png" class="close" alt=""></span>the cost for 2 being between <span class="display-inline position-relative mr10"><input type="text" class="input-span f18 font-rubikm text-up" placeholder"`500 - `1000. "><img src="img/close.png" class="close" alt=""></span></p>
+                    <p class="font-rubikm color-white text-up f18">Cuisine in the <span class="display-inline position-relative mr10"><input type="text" placeholder"afternoon" class="input-span f18 font-rubikm text-up" ><img src="img/close.png" class="close" alt=""></span>the cost for 2 being between
+                        <span class="display-inline position-relative mr10"><input type="text" class="input-span f18 font-rubikm text-up" placeholder"`500 - `1000. "><img src="img/close.png" class="close" alt=""></span></p>
                     <div class="btn-apply mt45">
                         <button type="button" class="btn-green font-rubikm f18 text-up">Apply</button>
                     </div>
@@ -37,11 +38,23 @@
         </div>
     </div>
 </section>
+<section class="hidden-md hidden-lg visible-xs">
+  <div class="ui-accordian">
+      <uib-accordion close-others="true">
+        <uib-accordion-group is-open="accordian[0].isFirstOpen">
+          <uib-accordion-heading>
+            FILTER<i class="pull-right fa" ng-class="{'fa fa-minus': accordian[0].isFirstOpen, 'fa fa-plus': !accordian[0].isFirstOpen}"></i>
+          </uib-accordion-heading>
+          World
+        </uib-accordion-group>
+      </uib-accordion>
+  </div>
+</section>
 <section>
     <div class="bg-color">
         <div class="container-fluid">
             <div class="row mar30">
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-5 col-xs-6">
                     <div class="mt35">
                         <span class="font-rubik text-up f18 color-bl">Sort BY: </span>
                         <div class="display-inline">
@@ -56,7 +69,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-7 col-xs-6">
                     <div class="mt50">
                         <div class="toggle-btn pull-right">
                             <span class="font-rubik f18 text-up color-bl mr10" style="vertical-align: top;">Map View </span>
@@ -129,44 +142,45 @@
     </div>
 </section>
 <section class="">
-<div class="container-fluid pl0">
-  <div class="row">
-    <div class="col-md-6 padding0">
-      <div class="larg-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15097.574594355174!2d72.81450373600775!3d18.913962344069734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants+near+Colaba%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1466056650330" width="100%" max-width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="col-md-6 padding0">
-      <div class="list-view">
-        <ul>
-          <li ng-repeat="item in rowdata track by $index">
-            <div class="box-data">
-              <div class="spo top-left">
-                <span>Sponsored</span>
-              </div>
-              <div class="box-title">
-                <h4 class="text-up font-rubik font-light f24 cpointer">{{item.title}}</h4>
-              </div>
-              <div class="box-datas">
-                <span class="font-rubik">{{item.data}}</span>
-              </div>
-              <div class="box-rat mt35">
-                <img src="img/rating.png" alt="">
-              </div>
-              <div class="box-like mt20">
-                <div class="float-left">
-                    <img src="img/likes.png" alt="" class="img-responsive">
-                </div>
-                <div class="float-right btn-apply">
-                    <button type="button" class="btn-green font-rubikm f18 text-up">Know more</button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
+    <div class="container-fluid pl0">
+        <div class="row">
+            <div class="col-md-6 padding0 col-sm-6">
+                <div class="larg-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15097.574594355174!2d72.81450373600775!3d18.913962344069734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants+near+Colaba%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1466056650330"
+                        width="100%" max-width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>s
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="col-md-6 padding0 col-sm-6">
+                <div class="list-view">
+                    <ul>
+                        <li ng-repeat="item in rowdata track by $index">
+                            <div class="box-data">
+                                <div class="spo top-left">
+                                    <span>Sponsored</span>
+                                </div>
+                                <div class="box-title">
+                                    <h4 class="text-up font-rubik font-light f24 cpointer">{{item.title}}</h4>
+                                </div>
+                                <div class="box-datas">
+                                    <span class="font-rubik">{{item.data}}</span>
+                                </div>
+                                <div class="box-rat mt35">
+                                    <img src="img/rating.png" alt="">
+                                </div>
+                                <div class="box-like mt20">
+                                    <div class="float-left">
+                                        <img src="img/likes.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="float-right btn-apply mt-25">
+                                        <button type="button" class="btn-green font-rubikm f18 text-up">Know more</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </section>

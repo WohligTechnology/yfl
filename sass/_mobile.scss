@@ -10,6 +10,14 @@
 }
 }
 @media (max-width: $screen-md-max){
+  .box-datas span {
+
+    margin: 0 100px 0 0;
+
+}
+  .mt-25{
+    margin-top: 25px;
+  }
   .f34 {
     font-size: 25px;
 }
@@ -54,6 +62,19 @@
 }
 }
 @media (max-width: $screen-sm-max){
+  .select-cl {
+
+    margin-left: 5px;
+}
+  .f40 {
+    font-size: 30px;
+}
+  .f28 {
+    font-size: 20px;
+}
+  .mob-margin{
+    margin: 0px;
+  }
   .f65 {
     font-size: 30px;
 }
@@ -81,7 +102,7 @@
     font-size: 18px;
 }
 .mt45 {
-    margin-top:10px;
+    margin-top:30px;
 }
 .m-text-center{
   text-align: center;
@@ -133,6 +154,28 @@ body {
 
 }
 @media (max-width: $screen-xs-max){
+  .mar-mob{
+    margin-top: 15px !important;
+  }
+  .flex-control-nav {
+display: none;
+}
+  .kno-btn {
+    font-size: 14px;
+    padding: 6px 26px;
+
+}
+  .f28 {
+    font-size: 15px;
+}
+  .f40 {
+    font-size: 20px;
+}
+  .slider-data {
+
+    left: 40%;
+
+}
   .f-sign {
     font-size: 12px;
 }
@@ -245,11 +288,25 @@ body {
 }
 
 @media (max-width:480px) {
+  .kno-btn {
+    font-size: 10px;
+    padding: 5px 20px;
+}
+  .slider-data {
+    left: 50%;
+
+}
   .m-right{
         float: right;
   }
+  .m-font12{
+    font-size: 12px;
+  }
+  .m-auto{
+    margin: 0;
+  }
   .f40 {
-    font-size: 20px;
+    font-size: 15px;
 
 }
   .mt30 {
@@ -257,7 +314,7 @@ body {
 }
   .btn {
       font-size: 10px;
-      padding: 6px;
+      padding: 5px;
   }
   .health-detail{
     p {
