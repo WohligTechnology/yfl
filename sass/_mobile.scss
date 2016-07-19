@@ -1,705 +1,696 @@
-@media (max-width:1200px){
-  .row-flex {
-  display: block;
-}
-.yoga-info p:before{
-  display: none;
-}
-.yoga-info p:after{
-  display: none;
-}
-}
-@media (max-width: $screen-md-max){
-  .f34 {
-    font-size: 25px;
-}
-.f55 {
-    font-size: 45px;
-}
-.yoga-info p {
-    font-size: 40px;
-}
-.f30 {
-    font-size: 25px;
-}
-.f65 {
-    font-size: 60px;
-}
-.f35 {
-    font-size: 30px;
-}
-.f45 {
-    font-size: 35px;
-}
-.mtop10{
-      margin-top: 10px;
-}
-.flex-direction-nav .flex-prev {
-  left: 40px !important;
-  zoom:0.7;
-}
-.flex-direction-nav .flex-next {
-  right: 40px !important;
-  zoom:0.7;
-}
-.flexslider:hover .flex-direction-nav .flex-prev {
-
-  left: 40px!important;
-
-}
-.flexslider:hover .flex-direction-nav .flex-next {
-
-  right: 40px!important;
-
-}
-}
-@media (max-width: $screen-sm-max){
-  .f65 {
-    font-size: 30px;
-}
-.f30 {
-    font-size: 16px;
-}
-.mt30 {
-    margin-top: 15px;
-}
-.btn {
-    font-size: 14px;
-    padding: 8px 20px;
-
-}
-.f55 {
-    font-size: 20px;
-}
-.f34 {
-    font-size: 14px;
-}
-.f45 {
-    font-size: 22px;
-}
-.f35 {
-    font-size: 18px;
-}
-.mt45 {
-    margin-top:10px;
-}
-.m-text-center{
-  text-align: center;
-}
-.m-top30{
-  margin-top: 30px;
-}
-.list-inline li {
-
-    margin: 3px 3px;
-}
-.float-left{
-  float: none;
-}
-.float-right{
-  float: none;
-}
-.f-sign{
-  font-size: 15px;
-}
-.z-img{
-  zoom:0.5;
-}
-.mt35 {
-    margin-top: 24px;
-}
-.mt38 {
-    margin-top: 26px;
-}
-body {
-  padding-top: 65px;
-  font-family: $font-family-sans-serif;
-}
-
-.subscribtion{
-  .subscribtion-text li{
-    padding: 0;
-    &:before{
-      display: none;
+@media (max-width:1200px) {
+    .row-flex {
+        display: block;
     }
-  }
-}
-
-.health-detail p {
-    margin-left: 178px;
-}
-
-
-
-}
-@media (max-width: $screen-xs-max){
-//added by ruhira//
-.block{
-  display: block;
-}
-
-.acco{
-  background-color: $green;
-  .accordion{
-    .panel,.panel-default > .panel-heading{
-      background-color: transparent;
-      border: none;
-      box-shadow: none;
-      text-transform: uppercase;
-      margin-top: 10px;
-      color: #fff;
+    .yoga-info p:before {
+        display: none;
     }
-    .panel-title{
-        font-size: 22px;
+    .yoga-info p:after {
+        display: none;
     }
-    .mr14{
-      margin-top: 14px;
+}
+@media (max-width: $screen-md-max) {
+    .box-datas span {
+        margin: 0 100px 0 0;
     }
-  span{
-    margin-top: 10px;
-  }
-}
-}
-
-.bg-color{
-    padding-bottom: 14px;
-  .mt50 {
-    margin-top: 20px;
-}
-}
-.select-cl{
-  margin-left: 0;
-}
-.mar30{
-  margin: 0;
-}
-.flex-direction-nav{
-
-display: none;
-}
-.slider-data{
-  left: 40%;
-
-}
-.flexslider{
-  overflow: hidden;
-  .slides img{
-    height: 350px;
-      width: auto!important;
-  }
-}
-.f24 {
-    font-size: 20px;
-}
-.btn-apply {
-  margin-top: 20px;
-  button{
-      padding: 14px 90px;
-}
-}
-  .social-link ul {
-    li{
-    padding: 0 10px;
-    a{
-      img{
-          width: 45px;
-      }
+    .mt-25 {
+        margin-top: 25px;
     }
-  }
-}
-.more{
-  color:$green ;
-  border-bottom: 1px solid $green;
-  font-size: 16px;
-  font-style: italic;
-  cursor: pointer;
-  .fa{
-    margin: 0 5px;
-  }
-}
-.desc-restaurant{
-text-align: justify;
-}
-.f29{
-  font-size: 29px;
-}
-.top-left{
-  display: none;
-}
-.connect-with-us{
-  h4,.place input{
-    font-size: 14px;
-  }
-}
-.connected{
-  h3{
-      font-size: 14px;
-  }
-}
-.top-right{
-  width: 60px;
-}
-//added by ruchira//
-  .f-sign {
-    font-size: 12px;
-}
-.f65 {
-    font-size: 25px;
-}
-.f30 {
-    font-size: 14px;
-}
-.btn {
-    font-size: 12px;
-    padding: 6px 14px;
-}
-.f55 {
-    font-size: 18px;
-}
-.f34 {
-    font-size: 13px;
-}
-.yoga-info p {
-    font-size: 30px;
-}
-.list-inline li {
-    margin: 3px 3px;
-}
-.z-img{
-  zoom:0.6;
-}
-.mt35 {
-    margin-top: 24px;
-}
-.mt38 {
-    margin-top: 26px;
-}
-
-
-body {
-  padding-top: 70px;
-  font-family: $font-family-sans-serif;
-}
-//article-detail starts//
-.float-right {
-    float: right;
-}
-.user-img{
-  width: 70px;
-  height: 70px;
-}
-.reads-more{
-  display: block;
-}
-.read-more{
-  display: none;
-}
-
-.art-title{
-  h4{
-    font-size: 16px;
-  }
-}
-
-.expert-teacher {
-    display: inline-block;
-    padding: 0 10px;
-    border: 0;
-    span{
-      font-size: 12px;
+    .f34 {
+        font-size: 25px;
     }
-  }
-
-  .yoga-detail a {
-      margin-top: 0;
-      font-size: 14px;
-  }
-
-//article-detail ends//
-//footer//
-
-.connected{
-  text-align: center;
+    .f55 {
+        font-size: 45px;
+    }
+    .yoga-info p {
+        font-size: 40px;
+    }
+    .f30 {
+        font-size: 25px;
+    }
+    .f65 {
+        font-size: 60px;
+    }
+    .f35 {
+        font-size: 30px;
+    }
+    .f45 {
+        font-size: 35px;
+    }
+    .mtop10 {
+        margin-top: 10px;
+    }
+    .flex-direction-nav .flex-prev {
+        left: 40px !important;
+        zoom: 0.7;
+    }
+    .flex-direction-nav .flex-next {
+        right: 40px !important;
+        zoom: 0.7;
+    }
+    .flexslider:hover .flex-direction-nav .flex-prev {
+        left: 40px!important;
+    }
+    .flexslider:hover .flex-direction-nav .flex-next {
+        right: 40px!important;
+    }
 }
-
-.neu {
-  p{
-    font-size: 11px;
-  }
-
-}
-.list{
-  text-align: center;
-}
-.float-left{
-  float: left;
-}
-
-.float-right{
-  float: right;
-}
-//footer//
-
-.flex-direction-nav {
-  .flex-next {
-    right: 18px !important;
-}
-.flex-prev {
-    left: 18px;
-  }
-}
-}
-
-@media (max-width:480px) {
-  //added by ruchira//
-
-  .f18 {
-      font-size: 11px;
-  }
-  .f13{
-    font-size: 8px;
-  }
-  .select-cl{
-    padding: 3px 0;
-    height: 35px;
-  }
-  .select-city{
-    width: 50%;
-  }
-  .f29{
-    font-size: 29px;
-  }
-  .body-img{
-    span{
-    font-size: 12px;
-  }
-}
-  .side-menu{
-    .navbar-nav{
-      margin-top: 25px;
-}
-   .active{
-     background-color: transparent;
-     a{
-     font-size: 28px;
-     }
-   }
-   a{
-     font-size: 12px;
-   }
- }
- .main-data{
-   h4{
-     font-size: 14px;
-   }
- }
- //added by ruchira//
-  .f40 {
-    font-size: 20px;
-
-}
-  .mt30 {
-    margin-top: 24px;
-}
-  .btn {
-      font-size: 10px;
-      padding: 6px;
-  }
-  .health-detail{
-    p {
-     font-size: 14px;
-     margin-left: 99px;
- }
- h2{
-   font-size: 22px;
- }
-  }
-
-
-  .food-section .carousel .flexslider .flex-control-nav {
-      bottom: 30px !important;
-  }
-
-
-  .healthy .flex-control-nav {
-      width: 22%;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      text-align: center;
-  }
-// .bg-slider{
-//   top:100px;
-// }
-.com .carousel .flexslider .flex-control-nav {
-    top: 75% !important;
-}
-
-.yoga-classes-slider .carousel .flexslider .flex-control-nav {
-    bottom: 60px !important;
-}
-
-.quote{
-  p{
-    font-size: 20px;
-  }
-  .quotes:after {
-    right: -160px;
-}
-
-.quotes:before {
-  left: -103px;
-}
-
-
-}
-
-
-
-}
-
-@media (max-width:350px) {
-  //added by bruchira//
-
-
-  .f29{
-    font-size: 24px;
-  }
-  .side-menu{
-     .active{
-       background-color: transparent;
-       a{
-       font-size: 24px;
-       }
-     }
-     a{
-       font-size: 10px;
-     }
-   }
-//added by ruchira//
-  .btn{
-    font-size: 8px;
-  }
-  .yoga-teachers img {
-      position: relative;
-      min-height: 310px;
-  }
-  .expert-teacher span {
-    font-size: 9px;
-}
-// .food-section{
-//   .yogaclass-inside{
-//       img{
-//         min-height: 200px;
-//       }
-//     }
-// }
-
-.food-detail{
-  h2{
-    margin: 0;
-    font-size: 18px;
-  }
-  p{
-    font-size: 11px;
-  }
-}
-.flex-control-paging li a {
-    width: 9px;
-    height: 9px;
-  }
-
-
-}
-
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 460px){
-  //added by ruchira//
-  .f29{
-    font-size: 24px;
-    width: 200px;
-    margin: 0 auto;
-  }
-  .slider-data{
+@media (max-width: $screen-sm-max) {
+    .select-cl {
+        margin-left: 5px;
+    }
+    .f40 {
+        font-size: 30px;
+    }
     .f28 {
+        font-size: 20px;
+    }
+    .mob-margin {
+        margin: 0;
+    }
+    .f65 {
+        font-size: 30px;
+    }
+    .f30 {
+        font-size: 16px;
+    }
+    .mt30 {
+        margin-top: 15px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .f55 {
+        font-size: 20px;
+    }
+    .f34 {
         font-size: 14px;
     }
-    .kno-btn {
-        font-size: 12px;
-        font-weight: 400;
-        padding: 5px 40px;
-        border: 1px solid #fff;
+    .f45 {
+        font-size: 22px;
     }
-    .box-rat{
-      img{
-        height: auto;
-    }
-    }
-  }
-
-  .acco{
-    background-color: $green;
-    .accordion{
-      .panel,.panel-default > .panel-heading{
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        text-transform: uppercase;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .panel-title{
-          font-size: 14px;
-      }
-      .mr14{
-        margin-top: 14px;
-      }
-      // .fa{
-      //   cursor: pointer;
-      // }
-    span{
-      margin-top: 10px;
-    }
-    .input-span{
-      height: 20px;
-    }
-  }
-  }
-  .list-view{
-    .box-title{
-      h4{
+    .f35 {
         font-size: 18px;
-      }
     }
-
-  .box-datas{
-    span{
-      width: 255px;
-      font-size: 14px;
+    .mt45 {
+        margin-top: 30px;
     }
-  }
-  .box-like{
-    img{
-      width: 50px;
+    .m-text-center {
+        text-align: center;
     }
-    .btn-apply{
-      margin-top: 0;
-      button{
-        padding: 14px 60px;
-      }
+    .m-top30 {
+        margin-top: 30px;
     }
-  }
-  }
-  //added by ruchira//
-  h1{
-    font-size: 24px;
-  }
-  h2{
-    font-size: 20px;
-  }
-  h3{
-    font-size: 18px;
-  }
-  h4{
-    font-size: 14px;
-  }
-  p{
-    font-size: 12px;
-  }
-  .neu {
-    p{
-      font-size: 7px;
+    .list-inline li {
+        margin: 3px;
     }
-
-  }
-  .list{
-    text-align: center;
-  }
-  .float-left{
-    float: left;
-  }
-
-  .float-right{
-    float: right;
-  }
-  .user-img{
-    width: 50px;
-    height: 50px;
-  }
-  .list-inline li {
-      background: #fff;
-      border-radius: 100%;
-      height: 23px;
-      width: 23px;
-      padding: 2px;
-      margin: 3px 2px;
-      line-height: 21px;
-  }
-  .list-inline li a i {
-    font-size: 13px;
-}
-
-.art-data{
-  p{
-    font-size: 10px;
-  }
-}
-
-.art-date{
-  margin-top: 10px;
-  span{
-    font-size: 10px;
-  }
-}
-.art-title{
-  h4{
-    font-size: 14px;
-  }
-}
-
-.expert-teacher {
-    padding: 0 2px;
-    span{
-      font-size: 9px;
+    .float-left {
+        float: none;
+    }
+    .float-right {
+        float: none;
+    }
+    .f-sign {
+        font-size: 15px;
+    }
+    .z-img {
+        zoom: 0.5;
+    }
+    .mt35 {
+        margin-top: 24px;
+    }
+    .mt38 {
+        margin-top: 26px;
+    }
+    body {
+        padding-top: 65px;
+        font-family: $font-family-sans-serif;
+    }
+    .subscribtion {
+        .subscribtion-text li {
+            padding: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .health-detail p {
+        margin-left: 178px;
     }
 }
-
-.subscribtion{
-  .subscribtion-text li{
-  font-size: 16px;
-  }
+@media (max-width: $screen-xs-max) {
+    //added by ruhira//
+    .block {
+        display: block;
+    }
+    .acco {
+        background-color: $green;
+        .accordion {
+            .panel,
+            .panel-default > .panel-heading {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                text-transform: uppercase;
+                margin-top: 10px;
+                color: #fff;
+            }
+            .panel-title {
+                font-size: 22px;
+            }
+            .mr14 {
+                margin-top: 14px;
+            }
+            span {
+                margin-top: 10px;
+            }
+        }
+    }
+    .bg-color {
+        padding-bottom: 14px;
+        .mt50 {
+            margin-top: 20px;
+        }
+    }
+    .select-cl {
+        margin-left: 0;
+    }
+    .mar30 {
+        margin: 0;
+    }
+    .flex-direction-nav {
+        display: none;
+    }
+    .slider-data {
+        left: 40%;
+    }
+    .flexslider {
+        overflow: hidden;
+        .slides img {
+            height: 350px;
+            width: auto!important;
+        }
+    }
+    .f24 {
+        font-size: 20px;
+    }
+    .btn-apply {
+        margin-top: 20px;
+        button {
+            padding: 14px 90px;
+        }
+    }
+    .social-link ul {
+        li {
+            padding: 0 10px;
+            a {
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+    .more {
+        color: $green;
+        border-bottom: 1px solid $green;
+        font-size: 16px;
+        font-style: italic;
+        cursor: pointer;
+        .fa {
+            margin: 0 5px;
+        }
+    }
+    .desc-restaurant {
+        text-align: justify;
+    }
+    .f29 {
+        font-size: 29px;
+    }
+    .top-left {
+        display: none;
+    }
+    .connect-with-us {
+        .place input,
+        h4 {
+            font-size: 14px;
+        }
+    }
+    .connected {
+        h3 {
+            font-size: 14px;
+        }
+    }
+    .top-right {
+        width: 60px;
+    }
+    //added by ruchira//
+     .mar-mob {
+        margin-top: 15px !important;
+    }
+    .flex-control-nav {
+        display: none;
+    }
+    .kno-btn {
+        font-size: 14px;
+        padding: 6px 26px;
+    }
+    .f28 {
+        font-size: 15px;
+    }
+    .f40 {
+        font-size: 20px;
+    }
+    .slider-data {
+        left: 40%;
+    }
+    .f-sign {
+        font-size: 12px;
+    }
+    .f65 {
+        font-size: 25px;
+    }
+    .f30 {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    .f55 {
+        font-size: 18px;
+    }
+    .f34 {
+        font-size: 13px;
+    }
+    .yoga-info p {
+        font-size: 30px;
+    }
+    .list-inline li {
+        margin: 3px;
+    }
+    .z-img {
+        zoom: 0.6;
+    }
+    .mt35 {
+        margin-top: 24px;
+    }
+    .mt38 {
+        margin-top: 26px;
+    }
+    body {
+        padding-top: 70px;
+        font-family: $font-family-sans-serif;
+    }
+    //article-detail starts//
+    .float-right {
+        float: right;
+    }
+    .user-img {
+        width: 70px;
+        height: 70px;
+    }
+    .reads-more {
+        display: block;
+    }
+    .read-more {
+        display: none;
+    }
+    .art-title {
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .expert-teacher {
+        display: inline-block;
+        padding: 0 10px;
+        border: 0;
+        span {
+            font-size: 12px;
+        }
+    }
+    .yoga-detail a {
+        margin-top: 0;
+        font-size: 14px;
+    }
+    //article-detail ends//
+    //footer//
+    .connected {
+        text-align: center;
+    }
+    .neu {
+        p {
+            font-size: 11px;
+        }
+    }
+    .list {
+        text-align: center;
+    }
+    .float-left {
+        float: left;
+    }
+    .float-right {
+        float: right;
+    }
+    //footer//
+    .flex-direction-nav {
+        .flex-next {
+            right: 18px !important;
+        }
+        .flex-prev {
+            left: 18px;
+        }
+    }
 }
-
-.quote{
-  p{
-    font-size: 18px;
-  }
-  .quotes:after {
-    right: -139px;
-    transform: scale(0.6);
+@media (max-width:480px) {
+    //added by ruchira//
+    .f18 {
+        font-size: 11px;
+    }
+    .f13 {
+        font-size: 8px;
+    }
+    .select-cl {
+        padding: 3px 0;
+        height: 35px;
+    }
+    .select-city {
+        width: 50%;
+    }
+    .f29 {
+        font-size: 29px;
+    }
+    .body-img {
+        span {
+            font-size: 12px;
+        }
+    }
+    .side-menu {
+        .navbar-nav {
+            margin-top: 25px;
+        }
+        .active {
+            background-color: transparent;
+            a {
+                font-size: 28px;
+            }
+        }
+        a {
+            font-size: 12px;
+        }
+    }
+    .main-data {
+        h4 {
+            font-size: 14px;
+        }
+    }
+    //added by ruchira//
+    .kno-btn {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+    .slider-data {
+        left: 50%;
+    }
+    .m-right {
+        float: right;
+    }
+    .m-font12 {
+        font-size: 12px;
+    }
+    .m-auto {
+        margin: 0;
+    }
+    .f40 {
+        font-size: 15px;
+    }
+    .mt30 {
+        margin-top: 24px;
+    }
+    .btn {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .health-detail {
+        p {
+            font-size: 14px;
+            margin-left: 99px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .food-section .carousel .flexslider .flex-control-nav {
+        bottom: 30px !important;
+    }
+    .healthy .flex-control-nav {
+        width: 22%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+    // .bg-slider{
+    //   top:100px;
+    // }
+    .com .carousel .flexslider .flex-control-nav {
+        top: 75% !important;
+    }
+    .yoga-classes-slider .carousel .flexslider .flex-control-nav {
+        bottom: 60px !important;
+    }
+    .quote {
+        p {
+            font-size: 20px;
+        }
+        .quotes:after {
+            right: -160px;
+        }
+        .quotes:before {
+            left: -103px;
+        }
+    }
 }
-
-.quotes:before {
-  left: -99px;
-  transform: scale(0.6);
+@media (max-width:350px) {
+    //added by bruchira//
+    .f29 {
+        font-size: 24px;
+    }
+    .side-menu {
+        .active {
+            background-color: transparent;
+            a {
+                font-size: 24px;
+            }
+        }
+        a {
+            font-size: 10px;
+        }
+    }
+    //added by ruchira//
+    .btn {
+        font-size: 8px;
+    }
+    .yoga-teachers img {
+        position: relative;
+        min-height: 310px;
+    }
+    .expert-teacher span {
+        font-size: 9px;
+    }
+    // .food-section{
+    //   .yogaclass-inside{
+    //       img{
+    //         min-height: 200px;
+    //       }
+    //     }
+    // }
+    .food-detail {
+        h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        p {
+            font-size: 11px;
+        }
+    }
+    .flex-control-paging li a {
+        width: 9px;
+        height: 9px;
+    }
 }
-
-
-}
-
-.food-detail{
-  h2{
-    margin: 0;
-    font-size: 20px;
-  }
-}
-.bg-color{
-    padding-bottom: 14px;
-  .mt50 {
-    margin-top: 20px;
-}
-}
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 460px) {
+    //added by ruchira//
+    .f29 {
+        font-size: 24px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .slider-data {
+        .f28 {
+            font-size: 14px;
+        }
+        .kno-btn {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 5px 40px;
+            border: 1px solid #fff;
+        }
+        .box-rat {
+            img {
+                height: auto;
+            }
+        }
+    }
+    .acco {
+        background-color: $green;
+        .accordion {
+            .panel,
+            .panel-default > .panel-heading {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                text-transform: uppercase;
+                margin-top: 10px;
+                color: #fff;
+            }
+            .panel-title {
+                font-size: 14px;
+            }
+            .mr14 {
+                margin-top: 14px;
+            }
+            // .fa{
+            //   cursor: pointer;
+            // }
+            span {
+                margin-top: 10px;
+            }
+            .input-span {
+                height: 20px;
+            }
+        }
+    }
+    .list-view {
+        .box-title {
+            h4 {
+                font-size: 18px;
+            }
+        }
+        .box-datas {
+            span {
+                width: 255px;
+                font-size: 14px;
+            }
+        }
+        .box-like {
+            img {
+                width: 50px;
+            }
+            .btn-apply {
+                margin-top: 0;
+                button {
+                    padding: 14px 60px;
+                }
+            }
+        }
+    }
+    //added by ruchira//
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .neu {
+        p {
+            font-size: 7px;
+        }
+    }
+    .list {
+        text-align: center;
+    }
+    .float-left {
+        float: left;
+    }
+    .float-right {
+        float: right;
+    }
+    .user-img {
+        width: 50px;
+        height: 50px;
+    }
+    .list-inline li {
+        background: #fff;
+        border-radius: 100%;
+        height: 23px;
+        width: 23px;
+        padding: 2px;
+        margin: 3px 2px;
+        line-height: 21px;
+    }
+    .list-inline li a i {
+        font-size: 13px;
+    }
+    .art-data {
+        p {
+            font-size: 10px;
+        }
+    }
+    .art-date {
+        margin-top: 10px;
+        span {
+            font-size: 10px;
+        }
+    }
+    .art-title {
+        h4 {
+            font-size: 14px;
+        }
+    }
+    .expert-teacher {
+        padding: 0 2px;
+        span {
+            font-size: 9px;
+        }
+    }
+    .subscribtion {
+        .subscribtion-text li {
+            font-size: 16px;
+        }
+    }
+    .quote {
+        p {
+            font-size: 18px;
+        }
+        .quotes:after {
+            right: -139px;
+            transform: scale(0.6);
+        }
+        .quotes:before {
+            left: -99px;
+            transform: scale(0.6);
+        }
+    }
+    .food-detail {
+        h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    .bg-color {
+        padding-bottom: 14px;
+        .mt50 {
+            margin-top: 20px;
+        }
+    }
 }
