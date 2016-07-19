@@ -884,6 +884,7 @@ span {
     &:hover .second-layer {
         display: block;
     }
+  
 }
 .sponser {
     position: absolute;
@@ -1263,6 +1264,9 @@ span {
     color: #333;
     .fa{
       cursor: pointer;
+    }
+    .active{
+      background-color: transparent;
     }
   }
 

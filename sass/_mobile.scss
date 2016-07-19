@@ -133,6 +133,113 @@ body {
 
 }
 @media (max-width: $screen-xs-max){
+//added by ruhira//
+.block{
+  display: block;
+}
+
+.acco{
+  background-color: $green;
+  .accordion{
+    .panel,.panel-default > .panel-heading{
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      text-transform: uppercase;
+      margin-top: 10px;
+      color: #fff;
+    }
+    .panel-title{
+        font-size: 22px;
+    }
+    .mr14{
+      margin-top: 14px;
+    }
+  span{
+    margin-top: 10px;
+  }
+}
+}
+
+.bg-color{
+    padding-bottom: 14px;
+  .mt50 {
+    margin-top: 20px;
+}
+}
+.select-cl{
+  margin-left: 0;
+}
+.mar30{
+  margin: 0;
+}
+.flex-direction-nav{
+
+display: none;
+}
+.slider-data{
+  left: 40%;
+
+}
+.flexslider{
+  overflow: hidden;
+  .slides img{
+    height: 350px;
+      width: auto!important;
+  }
+}
+.f24 {
+    font-size: 20px;
+}
+.btn-apply {
+  margin-top: 20px;
+  button{
+      padding: 14px 90px;
+}
+}
+  .social-link ul {
+    li{
+    padding: 0 10px;
+    a{
+      img{
+          width: 45px;
+      }
+    }
+  }
+}
+.more{
+  color:$green ;
+  border-bottom: 1px solid $green;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+  .fa{
+    margin: 0 5px;
+  }
+}
+.desc-restaurant{
+text-align: justify;
+}
+.f29{
+  font-size: 29px;
+}
+.top-left{
+  display: none;
+}
+.connect-with-us{
+  h4,.place input{
+    font-size: 14px;
+  }
+}
+.connected{
+  h3{
+      font-size: 14px;
+  }
+}
+.top-right{
+  width: 60px;
+}
+//added by ruchira//
   .f-sign {
     font-size: 12px;
 }
@@ -241,10 +348,52 @@ body {
     left: 18px;
   }
 }
-
 }
 
 @media (max-width:480px) {
+  //added by ruchira//
+
+  .f18 {
+      font-size: 11px;
+  }
+  .f13{
+    font-size: 8px;
+  }
+  .select-cl{
+    padding: 3px 0;
+    height: 35px;
+  }
+  .select-city{
+    width: 50%;
+  }
+  .f29{
+    font-size: 29px;
+  }
+  .body-img{
+    span{
+    font-size: 12px;
+  }
+}
+  .side-menu{
+    .navbar-nav{
+      margin-top: 25px;
+}
+   .active{
+     background-color: transparent;
+     a{
+     font-size: 28px;
+     }
+   }
+   a{
+     font-size: 12px;
+   }
+ }
+ .main-data{
+   h4{
+     font-size: 14px;
+   }
+ }
+ //added by ruchira//
   .f40 {
     font-size: 20px;
 
@@ -310,7 +459,24 @@ body {
 }
 
 @media (max-width:350px) {
+  //added by bruchira//
 
+
+  .f29{
+    font-size: 24px;
+  }
+  .side-menu{
+     .active{
+       background-color: transparent;
+       a{
+       font-size: 24px;
+       }
+     }
+     a{
+       font-size: 10px;
+     }
+   }
+//added by ruchira//
   .btn{
     font-size: 8px;
   }
@@ -350,6 +516,83 @@ body {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 460px){
+  //added by ruchira//
+  .f29{
+    font-size: 24px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .slider-data{
+    .f28 {
+        font-size: 14px;
+    }
+    .kno-btn {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px 40px;
+        border: 1px solid #fff;
+    }
+    .box-rat{
+      img{
+        height: auto;
+    }
+    }
+  }
+
+  .acco{
+    background-color: $green;
+    .accordion{
+      .panel,.panel-default > .panel-heading{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        text-transform: uppercase;
+        margin-top: 10px;
+        color: #fff;
+      }
+      .panel-title{
+          font-size: 14px;
+      }
+      .mr14{
+        margin-top: 14px;
+      }
+      // .fa{
+      //   cursor: pointer;
+      // }
+    span{
+      margin-top: 10px;
+    }
+    .input-span{
+      height: 20px;
+    }
+  }
+  }
+  .list-view{
+    .box-title{
+      h4{
+        font-size: 18px;
+      }
+    }
+
+  .box-datas{
+    span{
+      width: 255px;
+      font-size: 14px;
+    }
+  }
+  .box-like{
+    img{
+      width: 50px;
+    }
+    .btn-apply{
+      margin-top: 0;
+      button{
+        padding: 14px 60px;
+      }
+    }
+  }
+  }
+  //added by ruchira//
   h1{
     font-size: 24px;
   }
@@ -452,6 +695,11 @@ and (max-device-width : 460px){
     font-size: 20px;
   }
 }
-
+.bg-color{
+    padding-bottom: 14px;
+  .mt50 {
+    margin-top: 20px;
+}
+}
 
 }
