@@ -884,7 +884,7 @@ span {
     &:hover .second-layer {
         display: block;
     }
-  
+
 }
 .sponser {
     position: absolute;
@@ -1317,12 +1317,22 @@ span {
   }
 }
 
+.log,.loging,.logs{
+  height: 40px;
+h4{
+  color: $green;
+    font-size: 34px;
+    margin-left: 10px;
+}
+}
+
+
 .log:before{
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  right: 35px;
+  right: 40px;
   background: url("../img/yoga.png") no-repeat;
   background-size: contain;
 }
