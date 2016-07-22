@@ -39,7 +39,18 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
     url: "/restaurant",
     templateUrl: "views/template.html",
     controller: 'RestaurantCtrl'
-  });
+  })
+  
+  .state('studio-detail', {
+  url: "/studio-detail",
+  templateUrl: "views/template.html",
+  controller: 'StudioDetailCtrl'
+})
+.state('studio-list', {
+url: "/studio-list",
+templateUrl: "views/template.html",
+controller: 'StudioListCtrl'
+})
   $urlRouterProvider.otherwise("/home");
   $locationProvider.html5Mode(isproduction);
 });

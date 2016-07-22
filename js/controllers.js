@@ -457,6 +457,134 @@ $scope.tabchange = function(tab, a) {
     }
 };
 })
+
+.controller('StudioDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("studio-detail");
+  $scope.menutitle = NavigationService.makeactive("Studio Detail");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+  // $scope.loveSlider = [
+  //   {
+  //     img:"img/b1.jpg"
+  //
+  //   },
+  //   {
+  //     img:"img/b1.jpg"
+  //
+  //   },
+  //   {
+  //     img:"img/b1.jpg"
+  //
+  //   }
+  // ];
+  // $scope.rowdata = [
+  //   {
+  //     img:"img/a2.jpg",
+  //     title:"Conscious Eating - YourBody Knows Best",
+  //     data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+  //
+  //   },
+  //   {
+  //     img:"img/a2.jpg",
+  //     title:"Conscious Eating - YourBody Knows Best",
+  //     data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+  //
+  //   },
+  //   {
+  //     img:"img/a2.jpg",
+  //     title:"Conscious Eating - YourBody Knows Best",
+  //     data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+  //
+  //
+  //   },
+  //   {
+  //     img:"img/a2.jpg",
+  //     title:"Conscious Eating - YourBody Knows Best",
+  //     data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+  //
+  //
+  //   }
+  // ];
+//   $scope.rate = 7;
+//    $scope.max = 10;
+//    $scope.isReadonly = false;
+//
+//    $scope.hoveringOver = function(value) {
+//      $scope.overStar = value;
+//      $scope.percent = 100 * (value / $scope.max);
+//    };
+//
+//    $scope.tab = 'article';
+// $scope.classa = 'active';
+// $scope.classb = '';
+
+// $scope.tabchange = function(tab, a) {
+//     //        console.log(tab);
+//     $scope.tab = tab;
+//     if (a == 1) {
+//
+//         $scope.classa = "active";
+//         $scope.classb = '';
+//     } else {
+//
+//         $scope.classa = '';
+//         $scope.classb = "active";
+//     }
+// };
+})
+
+.controller('StudioListCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("studio-list");
+  $scope.menutitle = NavigationService.makeactive("Studio List");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.loveSlider = [
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    }
+  ];
+  $scope.rowdata = [
+    {
+      img:"img/a2.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    }
+  ];
+})
+
+
+
 .controller('RestaurantDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("restaurant-detail");
   $scope.menutitle = NavigationService.makeactive("Restaurant-Detail");

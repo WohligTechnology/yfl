@@ -1480,5 +1480,16 @@ h4{
   background-repeat: repeat;
   background-position: 100% 100%;
 }
+
+.larg-map{
+  iframe{
+    pointer-events: none;
+  }
+}
+
+
+
+
+
 @import "fancybox-override";
 @import "mobile";
