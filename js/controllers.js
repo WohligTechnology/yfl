@@ -539,29 +539,31 @@ $scope.tabchange = function(tab, a) {
   $scope.menutitle = NavigationService.makeactive("Studio List");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.check={};
+  $scope.check.map=true;
   $scope.loveSlider = [
     {
-      img:"img/b1.jpg"
+      img:"img/r2.jpg"
 
     },
     {
-      img:"img/b1.jpg"
+      img:"img/r3.jpg"
 
     },
     {
-      img:"img/b1.jpg"
+      img:"img/r4.jpg"
 
     }
   ];
   $scope.rowdata = [
     {
-      img:"img/a2.jpg",
+      img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
       data:"Colaba, Mumbai |Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow| 9am - 6pm"
 
     },
     {
-      img:"img/a2.jpg",
+      img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
       data:"Colaba, Mumbai | Hatha Yoga | 9am - 6pm"
 
@@ -569,7 +571,7 @@ $scope.tabchange = function(tab, a) {
     },
 
     {
-      img:"img/a2.jpg",
+      img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
       data:"Colaba, Mumbai | Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow | 9am - 6pm"
 
@@ -577,7 +579,31 @@ $scope.tabchange = function(tab, a) {
     },
 
   ];
-  // angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
+    $scope.rowdata1 = [
+    {
+      img:"img/mom.jpg",
+      title:" ipsum dolor sit amet",
+      data:"Colaba, Mumbai |Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow| 9am - 6pm"
+
+    },
+    {
+      img:"img/mom.jpg",
+      title:" ipsum dolor sit amet",
+      data:"Colaba, Mumbai | Hatha Yoga | 9am - 6pm"
+
+
+    },
+
+    {
+      img:"img/mom.jpg",
+      title:" ipsum dolor sit amet",
+      data:"Colaba, Mumbai | Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow | 9am - 6pm"
+
+
+    },
+
+  ];
+
   $scope.rate = 7;
   $scope.max = 10;
   $scope.isReadonly = false;
