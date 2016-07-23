@@ -1488,14 +1488,26 @@ h4{
   }
 }
 .glyphicon{
+color: #f4be33; 
   &:hover{
-    color: yellow;
+    color:#f4be33;
   }
   &:active{
-    color: yellow;
+    color:#f4be33;
+  }
+  &:focus{
+      color: #f4be33;
+  }
+  &:visited{
+    color: #f4be33;
   }
 }
 
+.rating{
+  span{
+    outline: 0;
+  }
+}
 
 
 
