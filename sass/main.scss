@@ -18,6 +18,7 @@ $third: #464646 !default;
 $font-family-sans-serif: "Rubik", sans-serif !default;
 $font-family-serif: "Rubik",serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @font-face {
     font-family: "Jura";
     src: url("../fonts/Jura-Bold.ttf");
@@ -1486,7 +1487,14 @@ h4{
     pointer-events: none;
   }
 }
-
+.glyphicon{
+  &:hover{
+    color: yellow;
+  }
+  &:active{
+    color: yellow;
+  }
+}
 
 
 

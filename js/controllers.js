@@ -557,32 +557,36 @@ $scope.tabchange = function(tab, a) {
     {
       img:"img/a2.jpg",
       title:"Lorem ipsum dolor sit amet",
-      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+      data:"Colaba, Mumbai |Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow| 9am - 6pm"
 
     },
     {
       img:"img/a2.jpg",
-      title:"Conscious Eating - YourBody Knows Best",
-      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
-
-    },
-    {
-      img:"img/a2.jpg",
-      title:"Conscious Eating - YourBody Knows Best",
-      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+      title:"Lorem ipsum dolor sit amet",
+      data:"Colaba, Mumbai | Hatha Yoga | 9am - 6pm"
 
 
     },
+
     {
       img:"img/a2.jpg",
-      title:"Conscious Eating - YourBody Knows Best",
-      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+      title:"Lorem ipsum dolor sit amet",
+      data:"Colaba, Mumbai | Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow | 9am - 6pm"
 
 
-    }
+    },
+
   ];
-})
+  // angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
+  $scope.rate = 7;
+  $scope.max = 10;
+  $scope.isReadonly = false;
 
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+}
+})
 
 
 .controller('RestaurantDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
