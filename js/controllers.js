@@ -464,20 +464,20 @@ $scope.tabchange = function(tab, a) {
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  // $scope.loveSlider = [
-  //   {
-  //     img:"img/b1.jpg"
-  //
-  //   },
-  //   {
-  //     img:"img/b1.jpg"
-  //
-  //   },
-  //   {
-  //     img:"img/b1.jpg"
-  //
-  //   }
-  // ];
+  $scope.loveSlider = [
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    }
+  ];
   // $scope.rowdata = [
   //   {
   //     img:"img/a2.jpg",
@@ -506,32 +506,14 @@ $scope.tabchange = function(tab, a) {
   //
   //   }
   // ];
-//   $scope.rate = 7;
-//    $scope.max = 10;
-//    $scope.isReadonly = false;
-//
-//    $scope.hoveringOver = function(value) {
-//      $scope.overStar = value;
-//      $scope.percent = 100 * (value / $scope.max);
-//    };
-//
-//    $scope.tab = 'article';
-// $scope.classa = 'active';
-// $scope.classb = '';
+  $scope.rate = 7;
+  $scope.max = 10;
+  $scope.isReadonly = false;
 
-// $scope.tabchange = function(tab, a) {
-//     //        console.log(tab);
-//     $scope.tab = tab;
-//     if (a == 1) {
-//
-//         $scope.classa = "active";
-//         $scope.classb = '';
-//     } else {
-//
-//         $scope.classa = '';
-//         $scope.classb = "active";
-//     }
-// };
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+}
 })
 
 .controller('StudioListCtrl', function($scope, TemplateService, NavigationService, $timeout) {
