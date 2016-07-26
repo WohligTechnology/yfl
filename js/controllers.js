@@ -504,18 +504,18 @@ $scope.tabchange = function(tab, a) {
   ];
   $scope.rowdata2 = [
     {
-      img:"img/m1.jpg",
+      img:"img/re1.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
       data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
 
     },
     {
-      img:"img/m1.jpg",
+      img:"img/re2.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
       data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
     },
     {
-      img:"img/m1.jpg",
+      img:"img/re3.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
       data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
 
