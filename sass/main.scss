@@ -306,6 +306,9 @@ span {
 .mt25 {
     margin-top: 25px;
 }
+.mt0{
+  margin-top: 0;
+}
 .font55 {
     font-size: 55px;
 }
@@ -1444,7 +1447,81 @@ h4{
   }
 }
 
+.cafe-space{
+    padding-top: 25px;
+}
 
+.sondhi{
+  padding: 50px 0;
+  background: linear-gradient(rgba(204, 204, 204, 0.16),#fff);
+}
+.tabs{
+  background-color: #51b1ac;
+  .nav-tabs{
+    border: none;
+  }
+  li{
+    padding: 10px 60px;
+  margin: 0 25px;
+    a{
+      color: #fff;
+    }
+  }
+
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background-color: #51b1ac;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  .nav > li > a:hover, .nav > li > a:focus{
+    background-color: #51b1ac;
+    border:  1px solid transparent;
+  }
+}
+.flexslider{
+  .distance{
+    img{
+      height: 350px;
+    }
+  }
+}
+
+.studio-description{
+
+  .flexslider{
+    .flex-control-nav {
+    z-index: 3;
+    li{
+      .flex-active{
+background: #f5bf33;
+      }
+    }
+}
+    .flex-direction-nav{
+      display: none;
+    }
+  }
+}
+
+.follow{
+  display: inline-block;
+    margin-left: 85px;
+    vertical-align: bottom;
+    button{
+      padding: 9px 50px;
+    }
+}
+
+.sliding-text{
+  padding: 20px;
+  .select-city {
+    width: auto;
+  }
+  .select-cl{
+    padding: 0 15px;
+    margin-left: 0;
+  }
+}
 //added to home by ruchira//
 .width100{
   width: 100%;
