@@ -58,7 +58,8 @@
   </div>
 </div>
 </section>
-<section>
+<section class="tabs">
+  <div class="container">
   <div class="tab">
   <uib-tabset>
       <uib-tab>
@@ -118,7 +119,7 @@
     </div>
     </div>
     </section>
-    <section>
+    <section class="teach-descript">
       <div class="bg-like mt30">
         <div class="pos-top text-center">
           <h2 class="font-rubik color-white font-light text-uppercase">teachers</h2>
@@ -127,4 +128,110 @@
         </div>
       </div>
     </section>
+    <section class="sondhi">
+      <div class="container">
+      <div class="row">
+                  <div class="col-md-4 mt35" ng-repeat="item in rowdata track by $index">
+                      <div class="body-img position-relative">
+                          <div class="img-main position-relative">
+                              <img ng-src="{{item.img}}" alt="" class="img-responsive">
+                              <div class="sponser">
+                                  <div class="top-left">
+                                      <span>Sponsored</span>
+                                  </div>
+                                  <div class="top-right pull-right">
+                                      <img src="img/like.png" alt="" class="img-responsive">
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </div>
+                          <div class="title text-center">
+                              <h5 class="text-up color-bl f18 font-light">{{item.title}}</h5>
+                              <span class="color-second high">{{item.data}}</span>
+                          </div>
+                          <div class="rating text-center mt20">
+                              <img src="img/star.png" alt="">
+                          </div>
+                          <div class="text-center mt10">
+                              <button class="know-m text-up btn-green font-light f18">know more</button>
+                          </div>
+                          <div class="second-layer">
+                            <div class="up-title">
+                              <h4>Seema Sondhi Yoga Studio </h4>
+                            </div>
+                            <div class="data-det mt15">
+                              <p>
+                                The yoga studio is an ambient space that was created by Seema Sondhi in 2001, where she could spread the light of yoga.  The thought is to help individuals on a healthier and more peaceful path by teaching them a system of exercise that fully integrates the body, mind and soul.
+                              </p>
+                            </div>
+                          <div class="position-relative" style="width: 100%; height: 100%;">
+                            <div class="text-center mt10 btn-down">
+                                <button class="know-m text-up btn-yellow font-light f18">know more</button>
+                            </div>
+                          </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+              </div>
+    </section>
+    <section class="cafe">
+      <div class="container">
+      <div class="row ">
+          <div class="col-md-4 mt35" ng-repeat="item in rowdata2 track by $index">
+              <div class="body-img position-relative">
+                  <div class="img-main position-relative">
+                      <img ng-src="{{item.img}}" alt="" class="img-responsive">
+                      <div class="sponser">
+                          <div class="top-left">
+                              <span>Sponsored</span>
+                          </div>
+                          <div class="top-right pull-right">
+                              <img src="img/like.png" alt="" class="img-responsive">
+                          </div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+                  <div class="title text-center">
+                      <h5 class="text-up color-bl f18 font-light">{{item.title}}</h5>
+                      <span class="color-second">{{item.data}}</span>
+                  </div>
+                  <div class="rating text-center mt20">
+                      <img src="img/star.png" alt="">
+                  </div>
+                  <div class="text-center mt10">
+                      <button class="know-m text-up btn-green font-light f18 hidden-xs">know more</button>
+                      <button class="know-m text-up btn-green font-light f18 hidden-md hidden-sm hidden-lg">view more</button>
+                  </div>
+                  <div class="second-layer">
+                      <div class="up-title">
+                          <h4>Amica Cafe</h4>
+                      </div>
+                      <div class="data-det mt15">
+                          <p>
+                              The yoga studio is an ambient space that was created by Seema Sondhi in 2001, where she could spread the light of yoga. The thought is to help individuals on a healthier and more peaceful path by teaching them a system of exercise that fully integrates
+                              the body, mind and soul.
+                          </p>
+                      </div>
+                      <div class="position-relative" style="width: 100%; height: 100%;">
+                          <div class="text-center mt10 btn-down">
+                              <button class="know-m text-up btn-yellow font-light f18">view more</button>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+      <div class="row">
+          <div class="text-center p40">
+              <h4 class="font-neutra font-light" style="color:#a7a9ac;">Loading..</h4>
+          </div>
+      </div>
+    </div>
+    </section>
+
     </div>

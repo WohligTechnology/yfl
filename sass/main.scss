@@ -1413,6 +1413,14 @@ h4{
   display: block;
   overflow: hidden;
 }
+.overlay{
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 //added to home by ruchira//
 .width100{
   width: 100%;
