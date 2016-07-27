@@ -16,6 +16,7 @@ $green: #51b1ac !default;
 $second: #4e4f51 !default;
 $main:#f4be33 !default;
 $third: #464646 !default;
+$dark:#4ca9a4 !default;
 $font-family-sans-serif: "Rubik", sans-serif !default;
 $font-family-serif: "Rubik",serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -41,6 +42,9 @@ $font-family-serif: "Rubik",serif !default;
 body {
     padding-top: 98px;
     font-family: $font-family-sans-serif;
+}
+.btn, button {
+  @include transition(all 300ms ease);
 }
 img.loading {
     text-align: center;
@@ -101,6 +105,12 @@ a {
 // header
 nav {
     background: url('../img/header-bg.png') no-repeat #fff;
+}
+.green{
+  color: $green;
+}
+.line{
+  line-height: 1.8;
 }
 .bg-like {
     background: url('../img/bg-like.png') no-repeat #47a7a2;
@@ -490,7 +500,7 @@ span {
           line-height: 40px;
           text-align: center;
             i {
-                color: #737373;
+                color: $green;
                 font-size: 20px;
             }
         }
@@ -499,10 +509,10 @@ span {
 .place {
     input {
         height: 54px;
-        font-size: 16px;
+
         @include placeholder {
             color: #575757;
-            font-size: 16px;
+
         }
     }
 }
@@ -743,7 +753,7 @@ span {
     }
 }
 .btn {
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 25px;
     font-weight: 400;
 }
@@ -805,7 +815,7 @@ span {
     }
 }
 .kno-btn {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     padding: 10px 40px;
     border: 1px solid #fff;
@@ -914,6 +924,9 @@ span {
 }
 .top-right {
     padding: 10px;
+    img{
+      width: 45px;
+    }
 }
 .p40 {
     padding: 40px 0;
@@ -1386,15 +1399,16 @@ h4{
 .glyphicon{
     color: $main;
 
-  &:hover{
-    color: $main;
-    // color:#333;
-  }
+  // &:hover{
+  //   color: $main;
+  //   color:#333;
+  // }
   &:active{
     color:$main;
   }
   &:focus{
       color: $main;
+      outline: 0;
   }
   &:visited{
     color: $main;
@@ -1481,7 +1495,7 @@ h4{
 .flexslider{
   .distance{
     img{
-      height: 350px;
+      height: 400px;
     }
   }
 }
@@ -1506,14 +1520,22 @@ background: #f5bf33;
 .follow{
   display: inline-block;
     margin-left: 85px;
-    vertical-align: bottom;
-    button{
-      padding: 9px 50px;
+    vertical-align: middle;
+    button {
+      padding: 17px 70px;
+      border: none;
+      span {
+        position: absolute;
+        top: 0px;
+        left: 0;
+      padding: 8px;
+        background-color:$dark;
+      }
     }
 }
 
 .sliding-text{
-  padding: 20px;
+    padding: 10px 30px 0;
   .select-city {
     width: auto;
   }
@@ -1521,7 +1543,118 @@ background: #f5bf33;
     padding: 0 15px;
     margin-left: 0;
   }
+  .rating{
+    margin: 15px 0;
+  }
+  .decsription{
+    p{
+      width: 500px;
+      padding-bottom: 15px;
+    }
+  }
 }
+
+.style-description{
+  .style-detailing{
+  padding: 20px 30px 30px 0px;
+      margin: 15px 0;
+  }
+}
+.style-detailing{
+  padding: 20px 0px 30px;
+  h3{
+        margin-bottom: 20px;
+  }
+  p{
+        padding-bottom: 20px;
+  }
+  button{
+    padding: 7px 25px;
+    border:1px solid $green;
+  }
+  .white-button{
+      background-color: #fff;
+      border: 1px solid #000;
+  }
+}
+.rounded{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  padding: 20px;
+  background: #ffffff url("../img/tutor.png") no-repeat top center;
+}
+.teacher-name{
+  padding: 0 25px 30px 0;
+    margin: 15px 0;
+  }
+.schedule{
+  h3{
+  margin: 30px 0;
+  }
+}
+.dotted{
+  border-right: 1px dotted #000;
+}
+.table{
+thead{
+  background-color: rgba(204, 204, 204, 0.3);
+  tr{
+    th {
+        border-bottom: 2px solid #fff;
+        padding: 15px 10px;
+        cursor: pointer;
+    }
+  }
+}
+  tbody{
+    tr{
+      td{
+        vertical-align: middle;
+        text-align: center;
+        border-top:none;
+      }
+    }
+  }
+  .wide{
+    td{
+      text-align: center;
+      border-right: 2px solid #fff;
+      .btn:active{
+        box-shadow: none;
+      }
+  }
+td:nth-of-type(3){
+  border: none;
+}
+  .btn-primary{
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.bg-green{
+  background-color: $green;
+}
+
+
+
+// .reserve-book{
+//     .on-hover{
+//     display: none;
+//     }
+//     button.no-hover:active{
+//       .on-hover{
+//         display: block;
+//       }
+//       .no-hover{
+//         display: none;
+//       }
+//     }
+//   }
+}
+
+
 //added to home by ruchira//
 .width100{
   width: 100%;
@@ -1551,6 +1684,7 @@ background: #f5bf33;
     border-top-left-radius: 0px;
 }
 }
+
 
 
 @import "fancybox-override";

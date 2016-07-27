@@ -466,15 +466,15 @@ $scope.tabchange = function(tab, a) {
 
   $scope.loveSlider = [
     {
-      img:"img/b1.jpg"
+      img:"img/r2.jpg"
 
     },
     {
-      img:"img/b1.jpg"
+      img:"img/r3.jpg"
 
     },
     {
-      img:"img/b1.jpg"
+      img:"img/r4.jpg"
 
     }
   ];
@@ -482,49 +482,54 @@ $scope.tabchange = function(tab, a) {
     {
       img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
-      data:"Colaba, Mumbai |Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow| 9am - 6pm"
-
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
     },
     {
       img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
-      data:"Colaba, Mumbai | Hatha Yoga | 9am - 6pm"
-
-
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
     },
-
     {
       img:"img/mom.jpg",
       title:"Lorem ipsum dolor sit amet",
-      data:"Colaba, Mumbai | Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow | 9am - 6pm"
-
-
-    },
-
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    }
   ];
   $scope.rowdata2 = [
     {
       img:"img/re1.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
-
+      location: "Colaba, Mumbai",
+      cuisine: "Italian, Continental",
+      costForTwo: " ₹ 500 -  ₹ 1000",
+      timing: "9am - 6pm"
     },
     {
-      img:"img/re2.jpg",
+      img:"img/re1.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
+      location: "Colaba, Mumbai",
+      cuisine: "Italian, Continental",
+      costForTwo: " ₹ 500 -  ₹ 1000",
+      timing: "9am - 6pm"
     },
     {
-      img:"img/re3.jpg",
+      img:"img/re1.jpg",
       title:"Lorem Ipsum Dolor Sit Amet Consectetuer",
-      data:"Colaba, Mumbai | Italian, Continental Cost for 2:  ₹ 500 -  ₹ 1000 | 9am - 6pm"
-
-
+      location: "Colaba, Mumbai",
+      cuisine: "Italian, Continental",
+      costForTwo: " ₹ 500 -  ₹ 1000",
+      timing: "9am - 6pm"
     }
   ];
 
-  $scope.rate = 7;
-  $scope.max = 10;
+  $scope.rate = 2;
+  $scope.max = 5;
   $scope.isReadonly = false;
 
   $scope.hoveringOver = function(value) {
