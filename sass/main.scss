@@ -1531,8 +1531,9 @@ background: #f5bf33;
         position: absolute;
         top: 0px;
         left: 0;
+        bottom: 0;
       padding: 8px;
-        background-color:$dark;
+        background-color:rgba(0, 0, 0, 0.1);
       }
     }
 }
@@ -1640,8 +1641,6 @@ td:nth-of-type(3){
   background-color: $green;
 }
 
-
-
 // .reserve-book{
 //     .on-hover{
 //     display: none;
@@ -1656,8 +1655,40 @@ td:nth-of-type(3){
 //     }
 //   }
 }
+.date-slider{
+  display: inline-block;
+background-color: #ccc;
+    width: calc(66% + 3px);
+padding: 10px 20px;
+span{
+  display: block;
+    text-align: center;
+    font-weight: 400;
+}
+}
+.calender{
+  display: inline-block;
+    background-color: $green;
+    width: 33%;
+    padding: 10px 20px;
+}
+.cal-slider {
+  margin-bottom: 3px;
+}
 
 
+.drop-boxes{
+  .style-box {
+    background-color: $green;
+    width: 33%;
+    padding: 10px 20px;
+    float: left;
+    color: white;
+    +.style-box {
+      margin-left: 3px;
+    }
+  }
+}
 //added to home by ruchira//
 .width100{
   width: 100%;
