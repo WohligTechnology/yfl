@@ -141,6 +141,104 @@
 }
 @media (max-width: $screen-xs-max) {
     //added by ruhira//
+.date-slider,.calender{
+  width: 100%;
+}
+.sliding-text{
+  .select-city{
+    width: 100%;
+  }
+}
+
+.follow{
+  width: 100%;
+  margin-left: 0;
+}
+.drop-boxes{
+  .style-box{
+    width: 100%;
+  }
+  .style-box +.style-box{
+      margin-left: 0;
+  }
+}
+.teach-details,.style-description{
+  .teacher-name{
+    padding: 0;
+  }
+   .style-detailing{
+     padding: 20px 0px 30px;
+  }
+  .rounded{
+    height: 100px;
+    width: 100px;
+  }
+  .dotted{
+    border-right: none;
+  }
+}
+
+
+
+
+
+.studio-detail{
+  .style-banner{
+    h3{
+      font-size: 24px;
+    }
+  }
+  .tabs li {
+    padding: 10px 0px;
+  }
+  .style-banner{
+    img{
+      height: 150px;
+    }
+  }
+  .sliding-text{
+      padding: 10px 30px 20px;
+    .follow {
+      button{
+        width: 100%;
+    padding: 10px 50px;
+    span{
+      padding: 3px;
+    }
+      }
+  }
+  }
+
+  .studio-description{
+    .decsription{
+      p{
+      width: auto;
+      }
+    }
+  }
+}
+.teacher-listing{
+  h3{
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .rounded{
+    width: 100px;
+    height: 100px;
+  }
+.style-banner{
+  img{
+    height: 200px;
+  }
+}
+.know-m {
+    width: 100%;
+  }
+}
+
+
     .block {
         display: block;
     }
@@ -473,6 +571,32 @@
 }
 @media (max-width:350px) {
     //added by bruchira//
+.studio-detail{
+  .studio-description {
+    .decsription p{
+      width: auto;
+    }
+  }
+  .sliding-text .select-cl{
+      width: 100%;
+  }
+  .style-banner{
+    h3{
+      font-size: 24px;
+    }
+  }
+}
+.tabs li {
+margin: 0;
+}
+    .teacher-listing{
+      h3{
+        font-size: 20px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
     .f29 {
         font-size: 24px;
     }
@@ -629,13 +753,13 @@
         width: 50px;
         height: 50px;
     }
-    .list-inline li {
+    .list-inline li a{
         background: #fff;
         border-radius: 100%;
         height: 23px;
         width: 23px;
         padding: 2px;
-        margin: 3px 2px;
+        margin: 3px 0px;
         line-height: 21px;
     }
     .list-inline li a i {

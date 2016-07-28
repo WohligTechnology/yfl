@@ -540,7 +540,14 @@ $scope.tabchange = function(tab, a) {
       timing: "9am - 6pm"
     }
   ];
+  $scope.rate = 2;
+  $scope.max = 5;
+  $scope.isReadonly = false;
 
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+  }
  $scope.tab = 'article';
 $scope.classa = 'active';
 $scope.classb = '';
