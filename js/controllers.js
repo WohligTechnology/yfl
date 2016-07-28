@@ -458,6 +458,61 @@ $scope.tabchange = function(tab, a) {
 };
 })
 
+
+.controller('TeacherCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("teacher-listing");
+  $scope.menutitle = NavigationService.makeactive("Teacher Listing");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.rowdata = [
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    }
+  ];
+
+ $scope.tab = 'article';
+$scope.classa = 'active';
+$scope.classb = '';
+
+$scope.tabchange = function(tab, a) {
+    //        console.log(tab);
+    $scope.tab = tab;
+    if (a == 1) {
+
+        $scope.classa = "active";
+        $scope.classb = '';
+    } else {
+
+        $scope.classa = '';
+        $scope.classb = "active";
+    }
+};
+})
+
+
 .controller('StudioDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("studio-detail");
   $scope.menutitle = NavigationService.makeactive("Studio Detail");

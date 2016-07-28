@@ -764,6 +764,10 @@ span {
     background-color: $black-bg;
     padding: 50px 0;
 }
+.bg-white{
+  background-color: #fff;
+  padding: 50px 0;
+}
 .bg-bk {
     background: url(../img/bg-color.jpg)no-repeat;
     background-size: cover;
@@ -1244,6 +1248,37 @@ span {
     }
 }
 //added to home by ruchira//
+.rounded{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  padding: 20px;
+}
+.teacher-listing{
+  .rounded{
+      background: #ffffff url("../img/teacher/achal.png") no-repeat top center;
+  }
+  .teachers-list{
+    padding: 10px 40px;
+    box-shadow: 2px 2px 10px 2px #ccc;
+    margin: 5px 0;
+  }
+  .teacher-detail{
+        padding: 20px 30px;
+  }
+  .bg-grey{
+    background-color: rgba(204, 204, 204, 0.14);
+  }
+  .sort{
+    .select-cl {
+    border-color: #464646;
+    height: 35px;
+    padding: 0 50px 0 15px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+  }
+}
 .subscribtion {
     background-color: #ccc;
     .subscribtion-text {
@@ -1582,10 +1617,6 @@ background: #f5bf33;
   }
 }
 .rounded{
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  padding: 20px;
   background: #ffffff url("../img/tutor.png") no-repeat top center;
 }
 .teacher-name{
