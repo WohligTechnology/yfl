@@ -512,6 +512,55 @@ $scope.tabchange = function(tab, a) {
 };
 })
 
+.controller('TeachProfileCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("teacher-profile");
+  $scope.menutitle = NavigationService.makeactive("Teacher Profile");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.rowdata = [
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    },
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    },
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    }
+  ];
+
+ $scope.tab = 'article';
+$scope.classa = 'active';
+$scope.classb = '';
+
+$scope.tabchange = function(tab, a) {
+    //        console.log(tab);
+    $scope.tab = tab;
+    if (a == 1) {
+
+        $scope.classa = "active";
+        $scope.classb = '';
+    } else {
+
+        $scope.classa = '';
+        $scope.classb = "active";
+    }
+};
+})
+
+
 
 .controller('StudioDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("studio-detail");

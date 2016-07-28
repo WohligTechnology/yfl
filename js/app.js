@@ -53,6 +53,13 @@ templateUrl: "views/template.html",
 controller: 'TeacherCtrl'
 })
 
+.state('teacher-profile', {
+url: "/teacher-profile",
+templateUrl: "views/template.html",
+controller: 'TeachProfileCtrl'
+})
+
+
 .state('studio-list', {
 url: "/studio-list",
 templateUrl: "views/template.html",
