@@ -140,6 +140,29 @@
         }
       }
     }
+    .social{
+      .insta-img{
+        margin-bottom: 10px;
+      }
+    }
+.teacher-profile{
+  .style-banner{
+      height: 100px;
+      width: auto;
+  }
+  .expert-detail{
+    .expert-text{
+      span{
+        color: #333;
+      }
+    }
+    .rounded{
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+}
     .calender,
     .date-slider {
         width: 100%;
