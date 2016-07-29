@@ -602,7 +602,7 @@ span {
     display: inline-block;
     padding: 0 16px;
     +.expert-teacher {
-      border-left: 1px solid #ccc;      
+      border-left: 1px solid #ccc;
     }
 }
 .healthy-restaurants {
@@ -1793,4 +1793,5 @@ footer h4 {
     top: 0;
 }
 @import "fancybox-override";
+@import "ruchira";
 @import "mobile";
