@@ -256,6 +256,16 @@
             width: 100%;
         }
     }
+    .style-listing{
+    .style-banner{
+      height: 200px;
+    }
+      .rounded {
+          width: 100px;
+          height: 100px;
+      }
+    }
+
     .block {
         display: block;
     }
@@ -359,13 +369,7 @@
     .top-right {
         width: 60px;
     }
-    .style-listing{
 
-      .rounded {
-          width: 100px;
-          height: 100px;
-      }
-    }
     //added by ruchira//
     .mar-mob {
         margin-top: 15px !important;
@@ -595,6 +599,12 @@
 }
 @media (max-width:350px) {
     //added by bruchira//
+    .style-listing{
+      .rounded{
+        height: 100px;
+        width: 100px;
+      }
+    }
     .studio-detail {
         .studio-description {
             .decsription p {
