@@ -53,6 +53,12 @@ templateUrl: "views/template.html",
 controller: 'TeacherCtrl'
 })
 
+.state('style-listing', {
+url: "/style-listing",
+templateUrl: "views/template.html",
+controller: 'StyleListCtrl'
+})
+
 .state('teacher-profile', {
 url: "/teacher-profile",
 templateUrl: "views/template.html",

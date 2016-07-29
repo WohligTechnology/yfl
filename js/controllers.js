@@ -382,6 +382,65 @@ $scope.healthSlider = [
      $scope.percent = 100 * (value / $scope.max);
    };
 })
+
+.controller('StyleListCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("style-listing");
+  $scope.menutitle = NavigationService.makeactive("Style Listing");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+  $scope.loveSlider = [
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    }
+  ];
+  $scope.rowdata = [
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    },
+    {
+      img:"img/a2.jpg",
+      title:"Conscious Eating - YourBody Knows Best",
+      data:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididuntut labore et dolore magna aliqua. "
+
+
+    }
+  ];
+  $scope.rate = 7;
+   $scope.max = 10;
+   $scope.isReadonly = false;
+
+   $scope.hoveringOver = function(value) {
+     $scope.overStar = value;
+     $scope.percent = 100 * (value / $scope.max);
+   };
+})
+
 .controller('ArticleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("article");
   $scope.menutitle = NavigationService.makeactive("Article");
