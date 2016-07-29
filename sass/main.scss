@@ -490,25 +490,28 @@ span {
 .color-white {
     color: #fff;
 }
-.list-inline {
-    li {
-      padding: 0 2px;
-      display: inline-block;
-        a {
-          display: inline-block;
-          background-color: #fff;
-          border-radius: 32px;
-          height: 32px;
-          width: 32px;
-          line-height: 40px;
-          text-align: center;
-            i {
-                color: $green;
-                font-size: 20px;
-            }
-        }
-    }
+.connected{
+  .list-inline {
+      li {
+        padding: 0 2px;
+        display: inline-block;
+          a {
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 32px;
+            height: 32px;
+            width: 32px;
+            line-height: 40px;
+            text-align: center;
+              i {
+                  color: $green;
+                  font-size: 20px;
+              }
+          }
+      }
+  }
 }
+
 .place {
     input {
         height: 54px;
@@ -1248,6 +1251,23 @@ span {
     }
 }
 //added to home by ruchira//
+.style-banner{
+  height: 200px;
+width: auto;
+background-image: url("../img/r6.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+  .banner-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h3{font-size: 52px;}
+        p{font-size: 18px;}
+  }
+}
 .rounded{
   width: 150px;
   height: 150px;
@@ -1550,15 +1570,7 @@ h4{
   bottom: 0;
 }
 
-.banner-text{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      text-align: center;
-      h3{font-size: 52px;}
-      p{font-size: 18px;}
-}
+
 .decsription{
   .more {
       color: $green;
@@ -1582,8 +1594,8 @@ h4{
 }
 .tabs{
   background-color: #51b1ac;
-  .nav-tabs{
-    border: none;
+  .tab{
+margin-top: 10px;
   }
   li{
     padding: 10px 60px;
@@ -1591,16 +1603,6 @@ h4{
     a{
       color: #fff;
     }
-  }
-
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-    background-color: #51b1ac;
-    border: 1px solid transparent;
-    color: #fff;
-  }
-  .nav > li > a:hover, .nav > li > a:focus{
-    background-color: #51b1ac;
-    border:  1px solid transparent;
   }
 }
 .flexslider{
@@ -1618,7 +1620,7 @@ h4{
     z-index: 3;
     li{
       .flex-active{
-background: #f5bf33;
+    background: #f5bf33;
       }
     }
 }
@@ -1668,7 +1670,7 @@ background: #f5bf33;
 
 .style-description{
   .style-detailing{
-  padding: 20px 30px 30px 0px;
+      padding: 20px 30px 30px 0px;
       margin: 15px 0;
   }
 }
@@ -1680,6 +1682,14 @@ background: #f5bf33;
   p{
         padding-bottom: 20px;
   }
+
+}
+.rounded{
+  background: #ffffff url("../img/tutor.png") no-repeat top center;
+}
+.teacher-name{
+  padding: 0 25px 30px 0;
+  margin: 15px 0;
   button{
     padding: 7px 25px;
     border:1px solid $green;
@@ -1688,13 +1698,6 @@ background: #f5bf33;
       background-color: #fff;
       border: 1px solid #000;
   }
-}
-.rounded{
-  background: #ffffff url("../img/tutor.png") no-repeat top center;
-}
-.teacher-name{
-  padding: 0 25px 30px 0;
-    margin: 15px 0;
   }
 .schedule{
   h3{
@@ -1744,20 +1747,6 @@ td:nth-of-type(3){
 .bg-green{
   background-color: $green;
 }
-
-// .reserve-book{
-//     .on-hover{
-//     display: none;
-//     }
-//     button.no-hover:active{
-//       .on-hover{
-//         display: block;
-//       }
-//       .no-hover{
-//         display: none;
-//       }
-//     }
-//   }
 }
 .date-slider{
   display: inline-block;
