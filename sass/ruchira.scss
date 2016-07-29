@@ -1,0 +1,15 @@
+.teacher-profile{
+  .style-banner{
+      background-image: url("../img/teacher/yog.jpg");
+  }
+  .expert-detail{
+    text-align: center;
+    padding-top: 70px;
+    .rounded{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+}
