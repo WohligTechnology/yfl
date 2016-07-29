@@ -49,6 +49,9 @@ body {
 .btn,
 button {
     @include transition(all 300ms ease);
+    &.btn-block {
+      width: 100%
+    }
 }
 .btn-green {
   @include button-variant(white, $green, $green);
@@ -111,6 +114,8 @@ a {
 }
 .col-flex {
     @include flex(1);
+    display: block;
+    width: 100%;
 }
 // wire frame css
 // header
@@ -168,6 +173,12 @@ nav {
                 top: 60%;
                 bottom: auto;
             }
+        }
+        .flex-control-paging li a {
+          background: rgba(255, 255, 255, 0.5);
+          &.flex-active {
+            background: rgba(255, 255, 255, 0.9);
+          }
         }
     }
 }
@@ -274,6 +285,9 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    h2, p {
+      color: white;
+    }
 }
 .f21 {
     font-size: 21px;
@@ -1469,26 +1483,45 @@ span {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 40px;
   h4 {
-      margin: 0;
+      margin: 0 0 5px;
+      color: #000;
+      font-family: 'Jura';
+      font-weight: normal;
+      font-size: 24px;
+  }
+  a {
+    color: inherit;
+    padding: 5px 0;
+    display: block;
   }
 }
-.icon-effect:before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 35px;
-  background-size: contain;
+.icon-effect {
+  margin-top: 20px;
+  position: relative;
+  &:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
+
 .yoga-icon:before {
-    background: url("../img/yoga.png") no-repeat;
+    background-image: url("../img/yoga.png");
 }
 .food-icon:before {
-    background: url("../img/food.png") no-repeat;
+    background-image: url("../img/food.png");
 }
 .love-icon:before {
-    background: url("../img/love.png") no-repeat;
+    background-image: url("../img/love.png");
 }
 .bg {
     background-image: url("../img/main.jpg");
@@ -1794,6 +1827,14 @@ footer h4 {
 }
 .head-size {
   margin: 0 0 10px;
+}
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 @import "fancybox-override";
 @import "ruchira";

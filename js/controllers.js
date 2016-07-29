@@ -10,17 +10,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.yoga = [
     {
-      img:"img/s1.png",
+      img:"img/slide-yoga.jpg",
       name: "yoga",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-        img:"img/s1.png",
+        img:"img/slide-yoga1.jpg",
       name: "yoga",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-        img:"img/s1.png",
+        img:"img/slide-yoga.jpg",
       name: "yoga",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
@@ -39,34 +39,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   ];
   $scope.food = [
     {
-      img:"img/s2.png",
+      img:"img/slide-food.jpg",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-      img:"img/s2.png",
+      img:"img/slide-food.jpg",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-      img:"img/s2.png",
+      img:"img/slide-food.jpg",
       name: "food",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }
   ];
   $scope.love = [
     {
-      img:"img/s1.png",
+      img:"img/slide-love.jpg",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-      img:"img/s1.png",
+      img:"img/slide-love.jpg",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     },
     {
-      img:"img/s1.png",
+      img:"img/slide-love.jpg",
       name: "love",
       descp: "aperiam, eaque ipsa quae ab illo inventore veritatis et."
     }

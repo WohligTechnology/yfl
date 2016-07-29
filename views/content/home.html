@@ -2,10 +2,11 @@
   <div class="row-flex">
     <div class="col-flex">
       <div class="text-center com">
-        <flex-slider class="carousel" flex-slide="slide in yoga track by $index" animation="slide" animation-loop="true" direction-nav="false">
+        <flex-slider class="carousel" flex-slide="slide in yoga track by $index" animation="fade" animation-loop="true" direction-nav="false">
           <li>
             <div class="bg-slider">
-              <img ng-src="{{slide.img}}" alt="" class="img-responsive">
+              <img ng-src="{{slide.img}}" class="img-responsive">
+              <div class="black-overlay"></div>
                <div class="yoga-detail">
                 <h2 class="name text-up head-size font-jura">{{slide.name}}</h2>
                 <p class="descp font-small ">{{slide.descp}}</p>
@@ -18,10 +19,11 @@
     </div>
     <div class="col-flex">
       <div class="text-center com">
-        <flex-slider class="carousel" flex-slide="slides in food track by $index" direction-nav="false" animation="slide" animation-loop="true">
+        <flex-slider class="carousel" flex-slide="slides in food track by $index" direction-nav="false" animation="fade" animation-loop="true">
           <li>
             <div class="bg-slider">
-              <img ng-src="{{slides.img}}" alt="" class="img-responsive">
+              <img ng-src="{{slides.img}}" class="img-responsive">
+              <div class="black-overlay"></div>
                <div class="yoga-detail">
                 <h2 class="name text-up head-size font-jura">{{slides.name}}</h2>
                 <p class="descp font-small ">{{slides.descp}}</p>
@@ -33,10 +35,11 @@
     </div>
     <div class="col-flex">
       <div class="text-center com">
-        <flex-slider class="carousel" flex-slide="slidess in love track by $index" direction-nav="false" animation="slide" animation-loop="true">
+        <flex-slider class="carousel" flex-slide="slidess in love track by $index" direction-nav="false" animation="fade" animation-loop="true">
           <li>
             <div class="bg-slider">
-              <img ng-src="{{slidess.img}}" alt="" class="img-responsive">
+              <img ng-src="{{slidess.img}}" class="img-responsive">
+              <div class="black-overlay"></div>
                <div class="yoga-detail">
                 <h2 class="name text-up head-size font-jura">{{slidess.name}}</h2>
                 <p class="descp font-small ">{{slidess.descp}}</p>
@@ -63,7 +66,8 @@
         <flex-slider class="carousel" flex-slide="class in yogaclasses track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
             <div class="yogaclass-inside bg-slider">
-              <img ng-src="{{class.img}}" alt="" class="img-responsive">
+              <img ng-src="{{class.img}}" class="img-responsive">
+              <div class="black-overlay"></div>
               <div class="yoga-detail">
               <h2 class="heading text-up head-size font-jura">{{class.head}}</h2>
               <p class="descp line-130">{{class.descp}}</p>
@@ -130,6 +134,7 @@
         <flex-slider class="carousel " flex-slide="teach in teacher track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
             <div class="yogaclass-inside bg-slider">
+              <div class="black-overlay"></div>
               <div class="food-detail text-center">
               <p class="descp  quotes font30 f21 line-130">{{teach.descp}}</p>
             </div>
@@ -147,7 +152,8 @@
         <flex-slider class="carousel " flex-slide="food in foodSlider track by $index" direction-nav="false" animation="slide" animation-loop="true">
           <li>
             <div class="yogaclass-inside bg-slider">
-              <img ng-src="{{food.img}}" alt="" class="img-responsive">
+              <div class="black-overlay"></div>
+              <img ng-src="{{food.img}}" class="img-responsive">
               <div class="food-detail text-center">
               <h2 class="heading text-up head-size font-jura">{{food.head}}</h2>
               <p class="descp  f30 f21 line-130">{{food.descp}}</p>
@@ -202,7 +208,7 @@
 <div class="row-flex">
   <div class="col-flex">
     <div class="yoga-teachers text-center  bg-slider">
-        <img src="img/bg2.png" alt="" class="img-responsive">
+        <img src="img/bg2.png" class="img-responsive">
         <div class="yoga-detail">
       <h2 class="text-up head-size font-jura">healthy restaurants you like</h2>
       <span>Sed ut perspiciatis unde omnis</span>
@@ -256,7 +262,7 @@
       <flex-slider class="carousel " flex-slide="love in loveSlider track by $index">
         <li>
           <div class="img">
-            <img ng-src="{{love.img}}" alt="" class="img-responsive">
+            <img ng-src="{{love.img}}" class="img-responsive">
           </div>
         </li>
       </flex-slider>
