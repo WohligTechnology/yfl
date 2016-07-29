@@ -172,6 +172,8 @@ nav {
 }
 .logo {
     padding: 15px 0;
+    z-index: 9;
+    position: relative;
     a {
       display: inline-block;
     }
