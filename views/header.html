@@ -1,23 +1,22 @@
 <header ng-controller="headerctrl">
     <nav class="navbar navbar-fixed-top">
         <div class="container">
-            <div class="absoluted">
-              <div class="mt35 pull-left">
-                  <a href="" ng-click="getMenu();">
-                      <img src="img/option.png" alt="">
-                  </a>
-              </div>
-              <div class="mt35 pull-right">
-                <button class=" btn bg-blue text-up">Sign In</button>
-                <button class=" btn bg-blue text-up">Become a member</button>
-              </div>
-            </div>
             <div class="logo text-center m-right">
                 <a ui-sref="home">
                     <img src="img/logo.png" class="z-img">
                 </a>
             </div>
-
+            <div class="absoluted">
+                <div class="mt35 pull-left">
+                    <a href="" ng-click="getMenu();">
+                        <img src="img/option.png" alt="">
+                    </a>
+                </div>
+                <div class="mt35 pull-right">
+                    <button class=" btn bg-blue text-up">Sign In</button>
+                    <button class=" btn bg-blue text-up">Become a member</button>
+                </div>
+            </div>
 
             <div class="side-menu menu-out">
                 <span ng-click="closeMenu();" class="closemenu {{menu}}">

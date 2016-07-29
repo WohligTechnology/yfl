@@ -172,6 +172,11 @@ nav {
 }
 .logo {
     padding: 15px 0;
+    z-index: 9;
+    position: relative;
+    a {
+      display: inline-block;
+    }
 }
 .mt35 {
     margin-top: 35px;
@@ -450,7 +455,7 @@ span {
         a {
             font-weight: 100;
             color: #fff;
-            padding: 5px 0;
+            padding: 7px 0;
             display: block;
             &:hover {
                 color: #fff;
@@ -1395,14 +1400,13 @@ span {
 .side-menu {
     width: 300px;
     height: 100%;
-    padding: 30px 40px 30px 50px;
+    padding: 30px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     background-image: url("../img/bg-like.png");
     background-color: #fff;
-    color: #333;
     .fa {
         cursor: pointer;
     }
@@ -1456,42 +1460,33 @@ span {
         }
     }
 }
-.log,
-.loging,
-.logs {
-    height: 40px;
-    h4 {
-        color: $green;
-        font-size: 24px;
-        margin-left: 10px;
-    }
+.navbar {
+  margin-bottom: 0px;
 }
-.log:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 40px;
+.slide-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  h4 {
+      margin: 0;
+  }
+}
+.icon-effect:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 35px;
+  background-size: contain;
+}
+.yoga-icon:before {
     background: url("../img/yoga.png") no-repeat;
-    background-size: contain;
 }
-.loging:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 35px;
+.food-icon:before {
     background: url("../img/food.png") no-repeat;
-    background-size: contain;
 }
-.logs:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 35px;
+.love-icon:before {
     background: url("../img/love.png") no-repeat;
-    background-size: contain;
 }
 .bg {
     background-image: url("../img/main.jpg");
