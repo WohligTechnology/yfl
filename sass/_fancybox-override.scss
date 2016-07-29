@@ -24,3 +24,15 @@
 		background-image: url('../img/fancybox_loading@2x.gif');
 	}
 }
+
+
+//Copy to main.scss
+.container {
+  position: relative;
+}
+.absoluted {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}

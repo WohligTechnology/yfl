@@ -1,52 +1,37 @@
 <header ng-controller="headerctrl">
-  <nav class="navbar navbar-fixed-top">
-    <div class="container">
-      <!-- <div class="hamburger pull-left">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </div> -->
-      <div class="row">
-        <div class="col-md-2 text-center col-sm-2 col-xs-2">
-          <div class="mt35">
-            <a href="" ng-click="getMenu();">
-              <img src="img/option.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-5 col-xs-6">
-          <div class="logo text-center m-right">
-          <a ui-sref="home">  <img src="img/logo.png" alt=""  class="z-img"></a>
-          </div>
-        </div>
-        <div class="col-md-1 col-sm-2 col-xs-2 hidden-xs">
-          <div class="text-center mt38 sign">
-            <a href="" class="text-uppercase color-black font-rubik f18 f-sign" style="text-decoration:none">Sign in</a>
-          </div>
-        </div>
-        <div class="col-md-1 col-sm-3 col-xs-4">
-          <div class="text-center mt30 sign ">
-            <!-- <a href="" class="text-uppercase color-black font-rubik f18 f-sign" style="text-decoration:none">Sign in</a> -->
-              <button class=" btn bg-blue text-up">Become a member</button>
-          </div>
-        </div>
-      </div>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="absoluted">
+              <div class="mt35 pull-left">
+                  <a href="" ng-click="getMenu();">
+                      <img src="img/option.png" alt="">
+                  </a>
+              </div>
+              <div class="mt35 pull-right">
+                <button class=" btn bg-blue text-up">Sign In</button>
+                <button class=" btn bg-blue text-up">Become a member</button>
+              </div>
+            </div>
+            <div class="logo text-center m-right">
+                <a ui-sref="home">
+                    <img src="img/logo.png" class="z-img">
+                </a>
+            </div>
 
-      <!-- <div class="collapse navbar-collapse" id="nav-collapse">
-        <div ng-include="template.menu" class="template menu"></div>
-      </div> -->
-      <div class="side-menu menu-out">
-          <span ng-click="closeMenu();" class="closemenu {{menu}}"><i class="ln-cross"></i></span>
-          <span class="pull-right close-icon"><i class="fa fa-2x fa-times-circle-o" ng-click="closeMenu();"></i></span>
-          <!-- <span class="heading-menu uppercase">Menu</span> -->
-          <div class="template menu" ng-include="template.menu"></div>
 
-          <div class="mt30">
+            <div class="side-menu menu-out">
+                <span ng-click="closeMenu();" class="closemenu {{menu}}">
+                    <i class="ln-cross"></i>
+                </span>
+                <span class="pull-right close-icon">
+                    <i class="fa fa-2x fa-times-circle-o" ng-click="closeMenu();"></i>
+                </span>
+                <div class="template menu" ng-include="template.menu"></div>
+
+                <div class="mt30">
                     <button class="butns btn bg-blue text-up">Become a member</button>
-          </div>
-      </div>
-    </div>
-  </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
-<!-- btn-1b
-btn-1 btn-1b -->
