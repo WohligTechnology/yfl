@@ -288,8 +288,8 @@
     .flexslider {
         overflow: hidden;
         .slides img {
-            height: 350px;
-            width: auto!important;
+          height: auto;
+          width: 100%;
         }
     }
     .f24 {
@@ -756,6 +756,9 @@ margin: 0;
         height: 50px;
     }
     .connected{
+      li{
+        margin: 0;
+      }
       .list-inline li a{
           background: #fff;
           border-radius: 100%;
