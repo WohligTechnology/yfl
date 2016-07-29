@@ -107,6 +107,7 @@ a {
 /* Start writing sass here */
 .row-flex {
     @include display(flex);
+    width: 100%;
 }
 .col-flex {
     @include flex(1);
@@ -1318,19 +1319,6 @@ span {
     }
 }
 .teacher-profile {
-    .rounded {
-        margin: 0 auto;
-    }
-    .profile-details {
-        padding: 160px 0 20px;
-    }
-    .expert-detail {
-        text-align: center;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
     .sondhi {
         background: rgba(204, 204, 204, 0.24);
     }
