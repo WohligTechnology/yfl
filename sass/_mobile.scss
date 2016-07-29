@@ -133,6 +133,13 @@
     display: block;
   }
     //added by ruhira//
+    .expert-detail{
+      .list-inline{
+        li{
+          width: 100%;
+        }
+      }
+    }
     .calender,
     .date-slider {
         width: 100%;
