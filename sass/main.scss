@@ -601,7 +601,9 @@ span {
 .expert-teacher {
     display: inline-block;
     padding: 0 16px;
-    border-right: 2px solid #000;
+    +.expert-teacher {
+      border-left: 1px solid #ccc;      
+    }
 }
 .healthy-restaurants {
     background-color: #f6f6f6;
