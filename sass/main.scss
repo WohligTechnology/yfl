@@ -45,6 +45,9 @@ $font-family-serif: "Rubik",serif !default;
 body {
     padding-top: 98px;
     font-family: $font-family-sans-serif;
+    background-image: url("../img/main.jpg");
+    background-repeat: repeat;
+    background-size: 100% auto;
 }
 .btn,
 button {
@@ -120,7 +123,7 @@ a {
 // wire frame css
 // header
 nav {
-    background: url('../img/header-bg.png') no-repeat #fff;
+    // background: url('../img/header-bg.png') no-repeat #fff;
 }
 .green {
     color: $green;
@@ -182,6 +185,14 @@ nav {
         }
     }
 }
+.food-slider {
+  .flex-control-paging li a {
+    background: rgba(255, 255, 255, 0.5);
+    &.flex-active {
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
 .sign {
     .btn {
         &:hover {
@@ -233,7 +244,6 @@ nav {
     background-color: #f9f9f9;
 }
 .yoga-teachers {
-    background-color: #f5f5f5;
 }
 .food-section {
     // background-color: #F2F2F2;
@@ -443,7 +453,6 @@ span {
     }
 }
 .teachers {
-    border-bottom: 2px solid #000;
     span {
         font-size: 18px;
     }
@@ -563,7 +572,7 @@ span {
     .img {
         height: 75px;
         width: 75px;
-        background-color: #ccc;
+        background-color: rgba(81, 177, 172, 0.2);
         border-radius: 100%;
         margin: 0 auto;
     }
@@ -583,7 +592,7 @@ span {
     .img {
         height: 75px;
         width: 75px;
-        background-color: #fff;
+        background-color: rgba(81, 177, 172, 0.2);
         border-radius: 100%;
         margin: 0 auto;
     }
@@ -1372,7 +1381,6 @@ span {
     }
 }
 .subscribtion {
-    background-color: #ccc;
     .subscribtion-text {
         li {
           color: #333;
@@ -1524,9 +1532,9 @@ span {
     background-image: url("../img/love.png");
 }
 .bg {
-    background-image: url("../img/main.jpg");
-    background-repeat: repeat;
-    background-position: 100% 100%;
+    // background-image: url("../img/main.jpg");
+    // background-repeat: repeat;
+    // background-position: 100% 100%;
 }
 .larg-map {
     iframe {
@@ -1835,6 +1843,9 @@ footer h4 {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.dark {
+  color: black !important;
 }
 @import "fancybox-override";
 @import "ruchira";

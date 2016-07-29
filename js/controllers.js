@@ -88,17 +88,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.yogaclasses = [
     {
-      img:"img/s3.png",
+      img:"img/yoga-classes.jpg",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     },
     {
-        img:"img/s3.png",
+        img:"img/yoga-classes.jpg",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     },
     {
-        img:"img/s3.png",
+        img:"img/yoga-classes.jpg",
       head: "yoga classes",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit."
     }
@@ -149,17 +149,17 @@ $scope.healthSlider = [
 
   $scope.foodSlider = [
     {
-      img:"img/Rectangle.png",
+      img:"img/r6.jpg",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
-      img:"img/Rectangle.png",
+      img:"img/r6.jpg",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     },
     {
-      img:"img/Rectangle.png",
+      img:"img/r6.jpg",
       head: "Food",
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     }
