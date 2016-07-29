@@ -1392,11 +1392,20 @@ background-position: center;
       color: #333;
       content: '\f111';
       font-size: 12px;
-      margin-right: 1.5em;
+      margin-right: 0;
       font: normal normal normal 12px/1 FontAwesome;
       vertical-align: middle;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
+      position: absolute;
+      top: 50%;
+      left: -5px;
+      @include transform(translateY(-50%));
+    }
+    &.subscribtion-text {
+      padding: 0;
+      display: block;
+      margin: 0;
     }
 }
 .trending{
