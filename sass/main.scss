@@ -1682,7 +1682,14 @@ margin-top: 10px;
   p{
         padding-bottom: 20px;
   }
-
+  button{
+    padding: 7px 25px;
+    border:1px solid $green;
+  }
+  .white-button{
+      background-color: #fff;
+      border: 1px solid #000;
+  }
 }
 .rounded{
   background: #ffffff url("../img/tutor.png") no-repeat top center;
