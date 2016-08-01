@@ -516,14 +516,14 @@ $scope.healthSlider = [
       timing: "9am - 6pm"
     }
   ];
-  // $scope.rate = 7;
-  //  $scope.max = 10;
-  //  $scope.isReadonly = false;
-  //
-  //  $scope.hoveringOver = function(value) {
-  //    $scope.overStar = value;
-  //    $scope.percent = 100 * (value / $scope.max);
-  //  };
+  $scope.rate = 3;
+   $scope.max = 5;
+   $scope.isReadonly = false;
+
+   $scope.hoveringOver = function(value) {
+     $scope.overStar = value;
+     $scope.percent = 100 * (value / $scope.max);
+   };
 })
 
 
@@ -577,8 +577,8 @@ $scope.healthSlider = [
 
     }
   ];
-  $scope.rate = 7;
-   $scope.max = 10;
+  $scope.rate = 3;
+   $scope.max = 5;
    $scope.isReadonly = false;
 
    $scope.hoveringOver = function(value) {

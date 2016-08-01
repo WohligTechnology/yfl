@@ -1,7 +1,23 @@
 .style-detail{
   .style-banner{
-  height: 200px;
+  height: 300px;
   background-image: url("../img/anusura.jpg");
+}
+.more {
+    color: $green;
+    border-bottom: 1px solid $green;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    .fa {
+        margin: 0 5px;
+    }
+}
+p+p{
+  margin-top: 20px;
+}
+.detail-text{
+  padding: 20px 0;
 }
 }
 
@@ -62,7 +78,7 @@ p+p{
 }
 .teacher-listing{
   .style-banner{
-    height: 300px;
+    height: 320px;
     background-image: url("../img/teacher/teaching.jpg");
   }
 }
