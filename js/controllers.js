@@ -1,7 +1,7 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'duScroll'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider'])
 
 .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
+  //Used to name the .html file , 'duScroll'
 
   $scope.template = TemplateService.changecontent("home");
   $scope.menutitle = NavigationService.makeactive("Home");
@@ -466,6 +466,68 @@ $scope.healthSlider = [
      $scope.percent = 100 * (value / $scope.max);
    };
 })
+
+
+.controller('StyleDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  $scope.template = TemplateService.changecontent("style-detail");
+  $scope.menutitle = NavigationService.makeactive("Style Detail");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  // $scope.accordian = [];
+  // $scope.accordian.push({
+  //   isFirstOpen: true,
+  //   isFirstDisabled: false
+  // });
+
+  $scope.loveSlider = [
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    },
+    {
+      img:"img/b1.jpg"
+
+    }
+  ];
+  $scope.rowdata = [
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    },
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    },
+    {
+      img:"img/mom.jpg",
+      title:"Lorem ipsum dolor sit amet",
+      location: "Colaba, Mumbai",
+      style: "Ashtanga Vinyasa,Hatha Yoga,Vinyasa Flow",
+      timing: "9am - 6pm"
+    }
+  ];
+  // $scope.rate = 7;
+  //  $scope.max = 10;
+  //  $scope.isReadonly = false;
+  //
+  //  $scope.hoveringOver = function(value) {
+  //    $scope.overStar = value;
+  //    $scope.percent = 100 * (value / $scope.max);
+  //  };
+})
+
+
+
 
 .controller('ArticleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   $scope.template = TemplateService.changecontent("article");
