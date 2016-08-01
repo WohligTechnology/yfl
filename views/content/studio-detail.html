@@ -60,7 +60,7 @@
   <div class="container">
   <div class="tab">
     <ul class="list-inline">
-      <li><a class="text-uppercase" href="">classes</a></li>
+      <li><a class="text-uppercase" href="" ng-click="changePage(styles)">classes</a></li>
       <li><a class="text-uppercase" href="">yoga styles</a></li>
       <li><a class="text-uppercase" href="">teachers</a></li>
       <li><a class="text-uppercase" href="">restaurants</a></li>
@@ -204,7 +204,7 @@ teacher <span class="caret"></span>
     </div>
   </div>
     </section>
-    <section class="yoga-styles">
+    <section class="yoga-styles" id="styles">
       <div class="container">
     <div class="style-description">
       <div class="row">
@@ -220,7 +220,7 @@ teacher <span class="caret"></span>
           <div class="style-detailing clearfix">
 <h3 class="text-up">bikram</h3>
 <p  class="line">Approximately 30 years ago, Bikram Choudhury developed this school of yoga where classes are held in artificially heated rooms. In a Bikram class, you will sweat like you've never sweated before as you work your way through a series of 26 poses (like ashtanga, a Bikram class alwaysfollows the same sequence).</p>
-<button type="button" class="pull-left white-button font-rubikm  text-up">Know more</button>
+<button type="button" class="pull-left white-button font-rubikm  text-up" ui-sref="">Know more</button>
 <button type="button" class="pull-right btn-green font-rubikm  text-up">view classes</button>
         </div>
         </div>
@@ -256,7 +256,7 @@ teacher <span class="caret"></span>
                 </div>
               </div>
             </div>
-            <button type="button" class=" pull-left white-button font-rubikm  text-up">Know more</button>
+            <button type="button" class=" pull-left white-button font-rubikm  text-up" ui-sref="teacher-profile">Know more</button>
             <button type="button" class="pull-right btn-green font-rubikm  text-up">view classes</button>
             </div>
           </div>
@@ -274,7 +274,7 @@ teacher <span class="caret"></span>
                 </div>
               </div>
               </div>
-              <button type="button" class=" pull-left white-button font-rubikm  text-up">Know more</button>
+              <button type="button" class=" pull-left white-button font-rubikm  text-up" ui-sref="teacher-profile">Know more</button>
               <button type="button" class="pull-right btn-green font-rubikm  text-up">view classes</button>
             </div>
           </div>

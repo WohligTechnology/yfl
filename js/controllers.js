@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap','ngAnimate', 'ngSanitize', 'angular-flexslider'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'duScroll'])
 
 .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
@@ -164,6 +164,32 @@ $scope.healthSlider = [
       descp: "Sed ut perspiciatis unde omnis iste natus error sit voluptat."
     }
   ];
+  $scope.$on('$viewContentLoaded', function() {
+      $('body').addClass('fp-viewing-0');
+      $(window).scroll(function() {
+        var scroller = $(document).scrollTop();
+        var height = $(window).height();
+        if (height <= scroller) {
+          $('body').removeClass('fp-viewing-0');
+        } else {
+          $('body').addClass('fp-viewing-0');
+        }
+      });
+    });
+
+    function makeAnimation(id) {
+      if (_.isEmpty(id)) {
+        id = "home";
+      }
+      var someElement = angular.element(document.getElementById(id));
+      $document.scrollToElement(someElement, 0, 1400);
+    }
+
+    $scope.$on('$viewContentLoaded', function(event) {
+      setTimeout(function() {
+        makeAnimation($stateParams.id);
+      }, 1000);
+    });
 })
 
 .controller('headerctrl', function($scope, TemplateService, $state) {
